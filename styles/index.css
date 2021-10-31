@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", Roboto, Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+#navbar {
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+
+.first-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 12%;
+    background-color: #46C4CF;
+    font-size: 16px;
+    border-bottom: 3px solid #D1AC50;
+}
+
+.nykaa-dhamaka {
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+}
+.nykaa-dhamaka:hover {
+    color:#FC2779;
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.nav-list li {
+    margin: 0px 7px;
+}
+.vertical-line {
+    font-size: 24px;
+    vertical-align: middle;
+}
+.nav-list li a {
+color: black;
+font-size: 16px;
+}
+.first-icon:hover{
+    color: #FC2779;
+}
+
+.nav-list li a i {
+    font-size: 22px;
+    color: black;
+    outline: none;
+    border: none;
+    vertical-align: middle;
+}
+.nav-list li a i:hover {
+    color: #FC2779;
+}
+
+
+.second-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 12%;
+    border-bottom: 1px solid grey;
+}
+
+
+
+.second-navlist {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.second-navlist li {
+    margin: 0px 15px 0px 0px;
+    font-size: 14px;
+    font-weight: 570;
+    cursor: pointer;
+}
+
+.second-navlist li a {
+    color: black;
+}
+
+.second-navlist li a:hover {
+    color: #FC2779;
+}
+
+.second-navlist li:nth-child(6) {
+    margin: 0px;
+}
+
+.search-icon {
+    outline: none;
+    border: none;
+    border-left: 1px solid #F4F4F4;
+    border-top: 1px solid #F4F4F4;
+    border-bottom: 1px solid #F4F4F4;
+    font-size: 17px;
+    background-color: #F4F4F4;
+    padding: 12px;
+    vertical-align: middle;
+}
+.second-search{
+    border-left: none;
+    background-color: #F4F4F4;
+    padding: 12px;
+    border-top: 1px solid #F4F4F4;
+    border-color: #F4F4F4;
+    width: 200px;
+    margin-right: 35px;
+}
+.second-SAC {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.account-text{
+    font-size: 12px;
+    color: black;
+    vertical-align: top;
+}
+.second-SAC > div {
+    margin: 0px 0px 0px 40px;
+}
+.second-SAC > div:nth-child(1) {
+    margin: 0px;
+}
+
+#nykaa-logo {
+    width:80px;
+    height:25px;
+}
+
+/* brand box */
+
+.brand-box {
+    width: 75%;
+    position: absolute;
+    top: 105px;
+    border: 1px solid lightgray;
+    left:12.5%;
+    display: grid;
+    grid-template-columns: 33% 67%;
+    display: none;
+}
+.leftBrands-box{
+    background-color:white;
+}
+.search-brandsinp {
+    padding:8px;
+    border:1px solid lightgray;
+    border-left: none;
+    width:90%;
+}
+.brand-searchicon{
+    padding:6px;
+    font-size: 20px;
+    outline: none;
+    border:1px solid lightgray;
+    border-right:none;
+    vertical-align: middle;
+}
+
+.topsearchbrands{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid lightgray;
+    margin-top: 10px;
+    padding: 10px;
+}
+.topBrandsHere{
+    display: flex;
+    flex-direction: column;
+    line-height:22px;
+}
+
+.topBrandsHere p {
+    color: grey;
+    margin:20px 0px;
+}
+.topBrandsHere a {
+    color:black;
+    font-size: 12px;
+}
+.topBrandsHere a:hover {
+    color: #FC2779;
+}
+
+.input-box {
+    padding:10px;
+}
+
+.A-Z {
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+}
+.A-Z a {
+    color: black;
+}
+.A-Z a:hover {
+    color: #FC2779;
+}
+
+.rightBrand-Box{
+    background-color: #F3F3F3;
+}
+
+.brand-filter-btnbox{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:20px;
+}
+.brand-filter-btnbox button {
+    padding:10px 20px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    background-color: lightgray;
+    cursor: pointer;
+}
+.brand-filter-btnbox button:hover {
+    color: white;
+    background-color: #FC2779;
+}
+
+.brand-imagesherepopular{
+    display: grid;
+    grid-template-columns: repeat(4,24%);
+    grid-gap: 1.4%;
+    width:90%;
+    margin-left: 8%;
+    
+}
+.brand-imageshereFeatured{
+    display: grid;
+    grid-template-columns: repeat(4,24%);
+    grid-gap: 1.4%;
+    width:90%;
+    margin-left: 8%;
+    display:none;
+}
