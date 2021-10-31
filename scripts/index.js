@@ -58,3 +58,10 @@ onlyat_btn.addEventListener("mouseover" , showPopularBrand)
 
 let new_launches = document.querySelector(".newlaunches")
 new_launches.addEventListener("mouseover" , ShowFeaturedimg)
+
+
+//brand section navbar end
+
+
+// nykaa fashion section navbar
+

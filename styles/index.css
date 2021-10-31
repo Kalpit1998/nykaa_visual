@@ -325,10 +325,13 @@ font-size: 16px;
     color: #FC2779;
 }
 
+
+
+
 .nykaa-fashion--box {
     display: grid;
     grid-template-columns: repeat(4,16.7%) 33.4%;
-
+    display: none;
 }
 
 .nykaa-fashion--box > div{
@@ -355,5 +358,140 @@ font-size: 16px;
     color:#FC2779;
 }
 .nykaa-fashion--box>div:nth-child(2n) {
+    background-color: #F7F7F7;
+}
+
+
+.clothing--box {
+    display: grid;
+    grid-template-columns: repeat(4,16.7%) 33.4%;
+    display: none;
+}
+.clothing--box > div{
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+   
+}
+.clothing--box > div a {
+    font-weight: 400;
+    color:rgba(3, 2, 26, 0.5);
+    font-size: 14px;
+    line-height: 18px;
+}
+.clothing--box>div a:hover {
+    color:#FC2779;
+}
+.clothing--box>div a:nth-child(1) {
+    margin-bottom: 10px;
+    color: black;
+    font-weight: 500;
+}
+.clothing--box>div a:nth-child(1):hover {
+    color:#FC2779;
+}
+.clothing--box>div:nth-child(2n) {
+    background-color: #F7F7F7;
+}
+
+
+
+.bag-foot--box {
+    display: grid;
+    grid-template-columns: repeat(4,16.7%) 33.4%;
+    display: none;
+}
+.bag-foot--box > div{
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+   
+}
+.bag-foot--box > div a {
+    font-weight: 400;
+    color:rgba(3, 2, 26, 0.5);
+    font-size: 14px;
+    line-height: 18px;
+}
+.bag-foot--box>div a:hover {
+    color:#FC2779;
+}
+.bag-foot--box>div a:nth-child(1) {
+    margin-bottom: 10px;
+    color: black;
+    font-weight: 500;
+}
+.bag-foot--box>div a:nth-child(1):hover {
+    color:#FC2779;
+}
+.bag-foot--box>div:nth-child(2n) {
+    background-color: #F7F7F7;
+}
+
+
+
+.Jewellery-acc--box{
+    display: grid;
+    grid-template-columns: repeat(6,16.7%);
+    display: none;
+}
+.Jewellery-acc--box>div {
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+}
+.Jewellery-acc--box>div a {
+    font-weight: 400;
+    color:rgba(3, 2, 26, 0.5);
+    font-size: 14px;
+    line-height: 18px;
+}
+.Jewellery-acc--box>div a:hover {
+    color:#FC2779;
+}
+.Jewellery-acc--box>div a:nth-child(1) {
+    margin-bottom: 10px;
+    color: black;
+    font-weight: 500;
+}
+.Jewellery-acc--box>div a:nth-child(1):hover {
+    color:#FC2779;
+}
+.Jewellery-acc--box>div:nth-child(2n) {
+    background-color: #F7F7F7;
+}
+
+
+
+
+
+.gadgets--box {
+    display: grid;
+    grid-template-columns: repeat(4,16.7%) 33.4%;
+}
+.gadgets--box > div{
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+   
+}
+.gadgets--box > div a {
+    font-weight: 400;
+    color:rgba(3, 2, 26, 0.5);
+    font-size: 14px;
+    line-height: 18px;
+}
+.gadgets--box>div a:hover {
+    color:#FC2779;
+}
+.gadgets--box>div a:nth-child(1) {
+    margin-bottom: 10px;
+    color: black;
+    font-weight: 500;
+}
+.gadgets--box>div a:nth-child(1):hover {
+    color:#FC2779;
+}
+.gadgets--box>div:nth-child(2n) {
     background-color: #F7F7F7;
 }
