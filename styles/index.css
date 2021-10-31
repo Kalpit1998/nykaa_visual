@@ -255,3 +255,105 @@ font-size: 16px;
     margin-left: 8%;
     display:none;
 }
+
+/* nykaa fashion box */
+
+.nykaa-fahsionBox{
+
+    width: 75%;
+    position: absolute;
+    top: 105px;
+    border: 1px solid lightgray;
+    left:12.5%;
+}
+.navigate-nykaaFashion{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navigate-nykaaFashion > div {
+    padding: 15px 33.3px;
+}
+.navigate-nykaaFashion > div:hover {
+    border-bottom: 3px solid #FC2779;
+}
+.navigate-nykaaFashion > div:hover a{
+    color:#FC2779
+}
+.navigate-nykaaFashion > div a {
+    color: grey;
+    font-size: 14px;
+}
+
+.Lingerie-box{
+    display: grid;
+    grid-template-columns: repeat(6,16.7%);
+    display: none;
+}
+.Lingerie-box>div {
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+}
+.Lingerie-box>div a {
+    font-weight: 400;
+    color:rgba(3, 2, 26, 0.5);
+    font-size: 14px;
+    line-height: 18px;
+}
+.Lingerie-box>div a:hover {
+    color:#FC2779;
+}
+.Lingerie-box>div a:nth-child(1) {
+    margin-bottom: 10px;
+    color: black;
+    font-weight: 500;
+}
+.Lingerie-box>div a:nth-child(1):hover {
+    color:#FC2779;
+}
+.Lingerie-box>div:nth-child(2n) {
+    background-color: #F7F7F7;
+}
+#Lingerie-unique{
+    color:black;
+    font-weight: 500;
+    margin-top: 30px;
+    font-size: 14px;
+}
+#Lingerie-unique:hover {
+    color: #FC2779;
+}
+
+.nykaa-fashion--box {
+    display: grid;
+    grid-template-columns: repeat(4,16.7%) 33.4%;
+
+}
+
+.nykaa-fashion--box > div{
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+   
+}
+.nykaa-fashion--box > div a {
+    font-weight: 400;
+    color:rgba(3, 2, 26, 0.5);
+    font-size: 14px;
+    line-height: 18px;
+}
+.nykaa-fashion--box>div a:hover {
+    color:#FC2779;
+}
+.nykaa-fashion--box>div a:nth-child(1) {
+    margin-bottom: 10px;
+    color: black;
+    font-weight: 500;
+}
+.nykaa-fashion--box>div a:nth-child(1):hover {
+    color:#FC2779;
+}
+.nykaa-fashion--box>div:nth-child(2n) {
+    background-color: #F7F7F7;
+}
