@@ -25,6 +25,14 @@ brand_box.addEventListener("mouseleave" , HideBrandBox)
 
 function ShowBrandBox() {
     brand_box.style.display = "grid"
+    
+let mainnykaa_fahsionBox = document.querySelector(".nykaa-fahsionBox")
+mainnykaa_fahsionBox.style.display = "none"
+
+    
+let beauty_advice_box = document.querySelector(".beauty-advice-box")
+beauty_advice_box.style.display = "none"
+
 }
 function HideBrandBox() {
     brand_box.style.display = "none"
@@ -65,6 +73,7 @@ new_launches.addEventListener("mouseover" , ShowFeaturedimg)
 
 // nykaa fashion section navbar
 let mainnykaa_fahsionBox = document.querySelector(".nykaa-fahsionBox")
+
 mainnykaa_fahsionBox.addEventListener("mouseleave" , HideNykaaFashionBox)
 
 let show_nykaa_fashionBox = document.querySelector(".show-nykaa_fashionBox")
@@ -72,6 +81,11 @@ show_nykaa_fashionBox.addEventListener("mouseover" , Show_Nykaa_Fashion_Box)
 
 function Show_Nykaa_Fashion_Box() {
     mainnykaa_fahsionBox.style.display = "block"
+    let brand_box = document.querySelector(".brand-box")
+    brand_box.style.display = "none"
+
+    let beauty_advice_box = document.querySelector(".beauty-advice-box")
+    beauty_advice_box.style.display = "none"
 }
 
 function HideNykaaFashionBox() {
@@ -168,4 +182,46 @@ function ShowGadgetTechBOx() {
 }
 
 
-// nykaa fashion section navbar
+// nykaa fashion section navbar end 1341
+
+// nykaa beauty advice box navbar
+
+let Show_nykaa_beautybox = document.querySelector(".Show-nykaa-beautybox")
+Show_nykaa_beautybox.addEventListener("mouseover" , Shownykaabeautybox)
+
+let beauty_advice_box = document.querySelector(".beauty-advice-box")
+beauty_advice_box.addEventListener("mouseleave" , Hidebeautyadvicebox)
+
+function Shownykaabeautybox() {
+    beauty_advice_box.style.display = "flex"
+    let brand_box = document.querySelector(".brand-box")
+    brand_box.style.display = "none"
+        
+let mainnykaa_fahsionBox = document.querySelector(".nykaa-fahsionBox")
+mainnykaa_fahsionBox.style.display = "none"
+}
+function Hidebeautyadvicebox() {
+    beauty_advice_box.style.display = "none"
+}
+
+
+//shopping cart work
+
+let cart__icon = document.querySelector(".cart--icon")
+
+cart__icon.addEventListener("click" , ShowShoppingBag)
+
+let shoppingBag = document.querySelector(".Shopping-bag-box")
+
+function ShowShoppingBag() {
+    shoppingBag.style.display = "block"
+}
+
+let shoppingBackBtn = document.querySelector(".shoppingback-btn")
+
+shoppingBackBtn.addEventListener("click" , HideShoppingBag)
+
+function HideShoppingBag() {
+    shoppingBag.style.display = "none"
+}
+

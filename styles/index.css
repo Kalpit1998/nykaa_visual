@@ -74,7 +74,7 @@ font-size: 16px;
     justify-content: space-between;
     align-items: center;
     padding:10px 12%;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid lightgray;
 }
 
 
@@ -143,6 +143,11 @@ font-size: 16px;
 #nykaa-logo {
     width:80px;
     height:25px;
+}
+
+.cart--icon{
+    
+    cursor: pointer;
 }
 
 /* brand box */
@@ -265,6 +270,8 @@ font-size: 16px;
     top: 105px;
     border: 1px solid lightgray;
     left:12.5%;
+    display: none;
+    background-color: white;
 }
 .navigate-nykaaFashion{
     display: flex;
@@ -493,5 +500,204 @@ font-size: 16px;
     color:#FC2779;
 }
 .gadgets--box>div:nth-child(2n) {
+    background-color: #F7F7F7;
+}
+
+/* navbar section beauty advice box */
+
+.beauty-advice-box {
+    width: 75%;
+    position: absolute;
+    top: 105px;
+    border: 1px solid lightgray;
+    left:12.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+    background-color: white;
+}
+.beauty-advice-box > a > div {
+    width:240px;
+    height:150px;
+    border-radius: 5px;
+}
+.beauty-advice-box img {
+   width:100%;
+   height: 100%;
+   border-radius: 3px;
+}
+.beauty-advice-box > a {
+    padding: 30px;
+    cursor: pointer;
+}
+
+.beauty-advice-box > a:hover div{
+    border: 3px solid #FC2779;
+}
+.p1-beauty{
+    color: black;
+    margin: 5px 0px;
+    font-size: 14px;
+}
+.beauty-advice-box > a:hover .p1-beauty{
+    color: #FC2779;
+}
+.p2-beauty {
+    color:grey;
+    font-size: 14px;
+}
+
+.beauty-advice-box > a:hover .p2-beauty{
+    color: #FC2779;
+}
+
+/* Shopping Bag start */
+
+.Shopping-bag-box{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width:26%;
+    background-color: #F3F3F3;
+    min-height: 100vh;
+    display: none;
+}
+
+.Shopping-bag-head{
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding:12px;
+}
+
+.shoppingback-btn{
+    background-color: white;
+    outline: none;
+    border: none;
+    font-size: 24px;
+    color: #FC2779;
+    font-weight: bold;
+    padding:0px;
+    margin-right: 33%;
+    cursor: pointer;
+}
+
+.ifempty {
+    width:60%;
+    margin: 50px auto;
+    text-align: center;
+    line-height: 40px;
+    display: none;
+}
+.ifempty p {
+    color:grey;
+}
+.ifempty img{
+    border-radius: 10px;
+    width: 80%;
+}
+
+.start-shopping {
+    background-color: #FC2779;
+    color: #fff;
+    font-weight: bold;
+    padding:10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Show-products-boxescont{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.showCart-Products{
+    display: grid;
+    grid-template-columns: 20% 70% 5%;
+    grid-gap: 2.5%;
+    padding: 10px;
+    margin:15px 10px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.showCart-Products img {
+    width:100%;
+}
+
+.cart-delete-btn{
+    border: none;
+    cursor: pointer;
+}
+.cart-product-name{
+    color: grey;
+    font-size: 14px;
+}
+
+.total-proceed{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+
+}
+.grand-total{
+    padding:10px;
+    font-size: 12px;
+    padding-left: 15px;
+}
+.Toatlrupee{
+    color:#FC2779
+}
+.proceedToPay{
+    color: white;
+    background-color: #FC2779;
+    text-align: center;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+.navigate-third-bar{
+    padding:20px 13%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    font-size: 14px;
+}
+.navigate-third-bar > li {
+    color: grey;
+}
+
+
+
+.thirdbar-mulboxes{
+    display: grid;
+    grid-template-columns: repeat(6,16.67%);
+    position: absolute;
+    top:162px;
+    width:75%;
+    left:12.5%;
+    border: 1px solid lightgray;
+    display: none;
+}
+.thirdbar-mulboxes>div {
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+}
+.thirdbar-mulboxes>div a {
+    font-weight: 400;
+    color:rgba(3, 2, 26, 0.5);
+    font-size: 14px;
+    line-height: 18px;
+}
+.thirdbar-mulboxes>div a:hover {
+    color:#FC2779;
+}
+.thirdbar-mulboxes>div:nth-child(2n) {
     background-color: #F7F7F7;
 }
