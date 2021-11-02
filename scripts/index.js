@@ -239,6 +239,27 @@ if(Show_products_boxescont.innerHTML === null) {
 }
 
 
+//for search result
+
+let second_search = document.querySelector(".second-search")
+let search_resultbox = document.querySelector(".search-resultbox")
+let search__container = document.querySelector(".search__container")
+let body = document.querySelector("body")
+
+second_search.addEventListener("input" , ShowSearchResultBox)
+body.addEventListener("click" , HIDESearchResultBox)
+
+function ShowSearchResultBox() {
+    search_resultbox.style.display = "block"
+    search__container.style.border = "2px solid #FC2779"
+    search__container.style.backgroundColor = "#F4F4F4"
+}
+function HIDESearchResultBox() {
+    second_search.value = null
+    search_resultbox.style.display = "none"
+    search__container.style.border = "none"
+    search__container.style.backgroundColor = "#fff"
+}
 
 // THIRD BAR WORK START
 
@@ -385,3 +406,92 @@ function HIDEluxe_Box() {
 
 
 // QUANTITY WORK FOR NAVBAR
+
+
+let qty1 = document.querySelector(".qty1")
+let qty2 = document.querySelector(".qty2")
+let qty3 = document.querySelector(".qty3")
+let qty4 = document.querySelector(".qty4")
+let qty5 = document.querySelector(".qty5")
+
+let Quantity = document.querySelector(".Quantity")
+let QTY_NUM = document.querySelector(".QTY-NUM")
+
+let QTY_BOX = document.querySelector(".QTY--BOX")
+
+
+let PRODUCT_PRICE = document.querySelector(".PRODUCT-PRICE")
+
+Quantity.addEventListener("click" , SHOWQTYBOX)
+
+function SHOWQTYBOX() {
+    QTY_BOX.style.display = "grid"
+}
+
+//PENDING.......
+qty1.addEventListener("click" , EDITPrice1)
+qty2.addEventListener("click" , EDITPrice2)
+qty3.addEventListener("click" , EDITPrice3)
+qty4.addEventListener("click" , EDITPrice4)
+qty5.addEventListener("click" , EDITPrice5)
+
+function EDITPrice1() {
+    qty1.style.backgroundColor = "#FC2779"
+
+
+    setTimeout(() => {
+        QTY_BOX.style.display = "none"
+        qty1.style.backgroundColor = "#fff"
+        QTY_NUM.textContent = "1"
+    },1500)
+    
+}
+
+
+function EDITPrice2() {
+    qty2.style.backgroundColor = "#FC2779"
+
+    setTimeout(() => {
+        QTY_BOX.style.display = "none"
+        qty2.style.backgroundColor = "#fff"
+        QTY_NUM.textContent = "2"
+    },1500)
+    
+}
+
+
+function EDITPrice3() {
+    qty3.style.backgroundColor = "#FC2779"
+
+    setTimeout(() => {
+        QTY_BOX.style.display = "none"
+        qty3.style.backgroundColor = "#fff"
+        QTY_NUM.textContent = "3"
+    },1500)
+    
+}
+
+
+function EDITPrice4() {
+    qty4.style.backgroundColor = "#FC2779"
+
+    setTimeout(() => {
+        QTY_BOX.style.display = "none"
+        qty1.style.backgroundColor = "#fff"
+        QTY_NUM.textContent = "4"
+    },1500)
+    
+}
+
+
+
+function EDITPrice5() {
+    qty5.style.backgroundColor = "#FC2779"
+
+    setTimeout(() => {
+        QTY_BOX.style.display = "none"
+        qty5.style.backgroundColor = "#fff"
+        QTY_NUM.textContent = "5"
+    },1500)
+    
+}
