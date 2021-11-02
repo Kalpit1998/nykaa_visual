@@ -682,7 +682,7 @@ font-size: 16px;
     width:75%;
     left:12.5%;
     border: 1px solid lightgray;
-    display: none;
+
 }
 .thirdbar-mulboxes>div {
     display: flex;
@@ -692,12 +692,37 @@ font-size: 16px;
 .thirdbar-mulboxes>div a {
     font-weight: 400;
     color:rgba(3, 2, 26, 0.5);
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 13px;
+    line-height: 20px;
 }
 .thirdbar-mulboxes>div a:hover {
     color:#FC2779;
 }
 .thirdbar-mulboxes>div:nth-child(2n) {
     background-color: #F7F7F7;
+}
+#forundeline-bold{
+    text-decoration: underline;
+    font-weight: 500;
+    color: black;
+    font-size: 16px;
+}
+#forundeline-bold:hover{
+    color: #FC2779;
+}
+.marg___top{
+    margin-top: 30px;
+}
+
+.Makeup-box{
+    display: none;
+}
+.Skin{
+    display: none;
+}
+.Hair{
+    display: none;
+}
+.Appliances{
+    display: none;
 }
