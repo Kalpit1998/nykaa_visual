@@ -379,5 +379,9 @@ function Showluxe_Box() {
     Luxe_box.style.display = "grid"
 }
 function HIDEluxe_Box() {
-    Luxe_box.style.display ="none"
+    Luxe_box.style.display = "none"
 }
+
+
+
+// QUANTITY WORK FOR NAVBAR

@@ -155,7 +155,7 @@ font-size: 16px;
 .brand-box {
     width: 75%;
     position: absolute;
-    top: 105px;
+    top: 100px;
     border: 1px solid lightgray;
     left:12.5%;
     display: grid;
@@ -607,6 +607,38 @@ font-size: 16px;
     cursor: pointer;
 }
 
+.Quantity{
+    font-size: 12px;
+    text-align: center;
+}
+.qty-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+    border-top: 1px solid lightgray;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.QTY--BOX{
+    background-color: white;
+    position: absolute;
+    bottom: 0%;
+    width:100%;
+    height:180px;
+    line-height: 30px;
+    display: grid;
+    grid-template-columns: 10% 10%;
+    padding: 20px;
+    
+}
+.qty-circle{
+    width:25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid black;
+    
+}
 .Show-products-boxescont{
     display: flex;
     flex-direction: column;
@@ -671,6 +703,9 @@ font-size: 16px;
 .navigate-third-bar > li {
     color: grey;
     padding: 20px 0px;
+}
+.navigate-third-bar > li a{
+    color: grey;
 }
 .navigate-third-bar > li:hover{
     border-bottom: 3px solid #FC2779;
