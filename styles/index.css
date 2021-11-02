@@ -661,7 +661,7 @@ font-size: 16px;
 }
 
 .navigate-third-bar{
-    padding:20px 13%;
+    padding:0px 13%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -670,15 +670,19 @@ font-size: 16px;
 }
 .navigate-third-bar > li {
     color: grey;
+    padding: 20px 0px;
 }
-
+.navigate-third-bar > li:hover{
+    border-bottom: 3px solid #FC2779;
+    color: #FC2779;
+}
 
 
 .thirdbar-mulboxes{
     display: grid;
     grid-template-columns: repeat(6,16.67%);
     position: absolute;
-    top:162px;
+    top:164px;
     width:75%;
     left:12.5%;
     border: 1px solid lightgray;
