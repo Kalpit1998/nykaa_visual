@@ -714,15 +714,38 @@ font-size: 16px;
     margin-top: 30px;
 }
 
+
+
 .Makeup-box{
     display: none;
 }
-.Skin{
+.Skin-box{
     display: none;
 }
-.Hair{
+.Hair-box{
     display: none;
 }
-.Appliances{
+.Appliances-box{
+    display: none;
+}
+.Personal-care-box{
+    display: none;
+}
+.Natural-third-box{
+    display: none;
+}
+.MOM-baby-box{
+    display: none;
+}
+.Health-well-box{
+    display: none;
+}
+.MEN-box {
+    display: none;
+}
+.Fragrance-box{
+    display: none;
+}
+.LUXE-box{
     display: none;
 }
