@@ -1,6 +1,7 @@
 //nykaa dhamaka
 let nykaa_dhamaka = document.getElementById("nykaa-dhamaka")
 let flag = true
+
 setInterval(() => {
 
     if(flag == true){
@@ -225,3 +226,14 @@ function HideShoppingBag() {
     shoppingBag.style.display = "none"
 }
 
+
+//shopping bag start
+
+let Show_products_boxescont = document.querySelector(".Show-products-boxescont")
+let ifempty = document.querySelector(".ifempty")
+
+
+if(Show_products_boxescont.innerHTML === null) {
+    ifempty.style.display = "block"
+    console.log("hero")
+}
