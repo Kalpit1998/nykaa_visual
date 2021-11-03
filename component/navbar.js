@@ -1486,7 +1486,7 @@ class="search-resultbox"></div>
     
         
         </li>
-        <li><a href="/" class="OFFERS"></a>OFFERS</li>
+        <li><a href="offer.html" id="OFFERS">OFFERS</a></li>
     </ul>
 
     

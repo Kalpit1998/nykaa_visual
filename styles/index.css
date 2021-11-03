@@ -302,7 +302,7 @@ font-size: 16px;
 
     width: 75%;
     position: absolute;
-    top: 105px;
+    top: 59%;
     border: 1px solid lightgray;
     left:12.5%;
     display: none;
@@ -543,7 +543,7 @@ font-size: 16px;
 .beauty-advice-box {
     width: 75%;
     position: absolute;
-    top: 105px;
+    top: 59%;
     border: 1px solid lightgray;
     left:12.5%;
     display: flex;
@@ -665,6 +665,7 @@ font-size: 16px;
     display: grid;
     grid-template-columns: 10% 10%;
     padding: 20px;
+    box-shadow: 0 4px 10px 0 rgba(156, 149, 149, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: none;
     
 }
@@ -686,6 +687,7 @@ font-size: 16px;
     grid-template-columns: 20% 70% 5%;
     grid-gap: 2.5%;
     padding: 10px;
+    padding-bottom: 0;
     margin:15px 10px;
     background-color: white;
     cursor: pointer;
@@ -711,7 +713,7 @@ font-size: 16px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2,50%);
-
+    line-height: 0;
 }
 .grand-total{
     padding:10px;
@@ -725,7 +727,7 @@ font-size: 16px;
     color: white;
     background-color: #FC2779;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 20px;
     cursor: pointer;
 }
 
@@ -798,6 +800,8 @@ font-size: 16px;
 
 
 
+
+
 .Makeup-box{
     display: none;
 }
@@ -830,4 +834,14 @@ font-size: 16px;
 }
 .LUXE-box{
     display: none;
+}
+
+#OFFERS {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/000/095/475/original/pink-camo-vector.jpg");
+    background-size: contain;
+    color: white;
+    padding: 0.3rem;
+    font-weight: 700;
+    transform: skewX(-20deg);
+    border-radius: 0.5rem;
 }
