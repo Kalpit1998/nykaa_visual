@@ -5,6 +5,10 @@ import {navbar} from "../component/navbar.js"
 let nav = document.getElementById("navbar")
 nav.innerHTML = navbar()
 
+import {FOOTER} from "../component/pagefooter.js"
+
+let footerpage = document.querySelector("footer")
+footerpage.innerHTML = FOOTER()
 
 //nykaa dhamaka
 let nykaa_dhamaka = document.getElementById("nykaa-dhamaka")
@@ -270,6 +274,24 @@ function HIDESearchResultBox() {
 }
 
 // THIRD BAR WORK START
+
+
+window.addEventListener("scroll",()=>{
+
+    let move = document.getElementById("nav---thirdbar");
+
+   let scrollbar = window.scrollY;
+    
+     if(scrollbar>=100)
+     {
+        move.style.display = "none";
+     }
+     else{
+         move.style.display="flex"
+     }
+     
+})
+
 
 let make_text = document.querySelector(".makeup-text")
 let skin_text = document.querySelector(".skin-text")

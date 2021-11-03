@@ -4,7 +4,8 @@
     max-width: 100%;
     position: relative;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 11.9%;
+    z-index: 2;
   }
   
   
@@ -57,7 +58,7 @@
     text-align: center;
   position: absolute;
  left: 44%;
-  top: 58%;
+  top: 78%;
   }
   
   .dots {

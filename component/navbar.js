@@ -3,7 +3,7 @@ function navbar() {
     return `
     <div class="first-bar">
     <div id="nykaa-dhamaka">
-<a href=""><p class="nykaa-dhamaka">NYKAA DIWALI DHAMAKA SALE UPTO 50% OFF Sparkle This Festive Season</p></a>
+<a href="landingpage.html"><p class="nykaa-dhamaka">NYKAA DIWALI DHAMAKA SALE UPTO 50% OFF Sparkle This Festive Season</p></a>
     </div>        
 
 <ul class="nav-list">
@@ -36,7 +36,7 @@ function navbar() {
     <i class="material-icons search-icon">&#xe8b6;</i><input type="text" placeholder="Search on Nykaa" class="second-search">
     </div>
     <div>
-        <a href="/"><i style="font-size:20px" class="fa">&#xf2c0;</i><span class="account-text">Account</span></a>
+        <a href="/"><i id="user--icon" class="fa">&#xf2c0;</i><span class="account-text">Account</span></a>
     </div>
     <div>
         <span class="cart--icon"><i style="font-size:20px" class="fa">&#xf290;</i></span>
@@ -745,7 +745,7 @@ class="search-resultbox"></div>
 
 
 
-    <ul class="navigate-third-bar">
+    <ul class="navigate-third-bar" id="nav---thirdbar">
         <li class="makeup-text"><a href="/">Makeup</a>
             <div class="Makeup-box thirdbar-mulboxes">
                 <div>
