@@ -105,3 +105,48 @@ rightone.onclick=function(){
 leftone.onclick=function(){
     sliderprodone.style.transform="translateX(0.4%)"
 }
+
+// slider-arrow
+window.addEventListener("scroll",()=>{
+
+    let move = document.getElementById("move");
+
+    scrollbar = window.scrollY;
+    
+     if(scrollbar>=100)
+     {
+        move.style.display = "block";
+     }
+     else{
+         move.style.display="none"
+     }
+})
+let move = document.getElementById("move");
+move.addEventListener("click",()=>{
+    window.scrollTo({
+    top:0,
+       left :0,
+       behavior:"smooth"
+    })
+})
+
+// onchan func for hide chat option and explor chatbox
+function exchat()
+{
+  let explorechat = document.getElementById("explr");
+  let chatbox = document.getElementById("cbt");
+  explorechat.style.display ="block";
+  chatbox.style.display = "none";
+
+}
+
+function clos()
+{
+  let explorechat = document.getElementById("explr");
+  let chatbox = document.getElementById("cbt");
+  explorechat.style.display ="none";
+  chatbox.style.display = "block";
+
+
+
+}
