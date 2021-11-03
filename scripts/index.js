@@ -1,3 +1,11 @@
+
+
+import {navbar} from "../component/navbar.js"
+
+let nav = document.getElementById("navbar")
+nav.innerHTML = navbar()
+
+
 //nykaa dhamaka
 let nykaa_dhamaka = document.getElementById("nykaa-dhamaka")
 let flag = true
@@ -477,7 +485,7 @@ function EDITPrice4() {
 
     setTimeout(() => {
         QTY_BOX.style.display = "none"
-        qty1.style.backgroundColor = "#fff"
+        qty4.style.backgroundColor = "#fff"
         QTY_NUM.textContent = "4"
     },1500)
     
