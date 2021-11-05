@@ -7,6 +7,12 @@ nav.innerHTML = navbar()
 
 import {FOOTER} from "../component/pagefooter.js"
 
+
+
+if(localStorage.getItem("userData") === null) {
+    localStorage.setItem("userData" , JSON.stringify([]))
+}
+
 let footerpage = document.querySelector("footer")
 footerpage.innerHTML = FOOTER()
 
@@ -525,3 +531,73 @@ function EDITPrice5() {
     },1500)
     
 }
+<<<<<<< HEAD
+
+// FOR SIGN IN -> SIGN OUT
+
+let SIGNIN = document.getElementById("FOR-Sign")
+let Logged = document.getElementById("FOR-Logged")
+let userName = document.querySelector(".user-name")
+let Account_Box = document.querySelector(".Account-BOX")
+let Profile_BOX = document.querySelector(".PROFILE-NAVIGATE")
+
+let GetUserData = JSON.parse(localStorage.getItem("userData")) 
+let Account_text = document.querySelector(".account-text")
+
+userName.textContent = GetUserData[GetUserData.length-1].name
+
+
+
+
+
+if(GetUserData !== null || GetUserData.length > 0) {
+    Logged.style.display = "block"
+    SIGNIN.style.display = "none"
+}
+
+// SIGNIN.addEventListener("click" , GoToSignInPage)
+
+// function GoToSignInPage () {
+    
+//     if(GetUserData === null || GetUserData.length == 0) {
+//         window.location.href = "http://localhost:5500/Signin.html"
+//     }
+// }
+
+Account_Box.addEventListener("mouseover", SHOWProfileBox)
+Account_Box.addEventListener("mouseleave" , HIDEProfileBox)
+
+function SHOWProfileBox() {
+    if(GetUserData !== null || GetUserData.length > 0) {
+        Profile_BOX.style.display = "flex"
+    }
+}
+function HIDEProfileBox() {
+    if(GetUserData !== null || GetUserData.length > 0) {
+        Profile_BOX.style.display = "none"
+    }
+}
+
+localStorage.setItem("userData" , JSON.stringify(GetUserData))
+
+
+
+// LOGOUT
+
+let sign_out = document.querySelector(".Sign-Out")
+
+
+sign_out.addEventListener("click" , SIGNOUT)
+
+function SIGNOUT() {
+    JSON.parse(localStorage.removeItem("userData"))
+    
+    // setTimeout(() => {
+    //     // if(localStorage.getItem("userData") === null) {
+    //     //     localStorage.setItem("userData" , JSON.stringify([]))
+    //     // }
+    //     window.location.href = ""
+    // },1500)
+}
+=======
+>>>>>>> ce6591b5e435a6f3f5918fef96723da0d8f701f7
