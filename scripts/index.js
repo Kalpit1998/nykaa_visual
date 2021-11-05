@@ -253,7 +253,7 @@ let ifempty = document.querySelector(".ifempty")
 
 if(Show_products_boxescont.innerHTML === null) {
     ifempty.style.display = "block"
-    console.log("hero")
+    
 }
 
 
@@ -531,7 +531,6 @@ function EDITPrice5() {
     },1500)
     
 }
-<<<<<<< HEAD
 
 // FOR SIGN IN -> SIGN OUT
 
@@ -599,5 +598,4 @@ function SIGNOUT() {
     //     window.location.href = ""
     // },1500)
 }
-=======
->>>>>>> ce6591b5e435a6f3f5918fef96723da0d8f701f7
+
