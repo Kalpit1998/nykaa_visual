@@ -35,8 +35,15 @@ function navbar() {
     <div class="search__container">
     <i class="material-icons search-icon">&#xe8b6;</i><input type="text" placeholder="Search on Nykaa" class="second-search">
     </div>
-    <div>
-        <a href="/"><i id="user--icon" class="fa">&#xf2c0;</i><span class="account-text">Account</span></a>
+    <div class="Account-BOX">
+        <a id="FOR-Sign"><i id="user--icon" class="fa">&#xf2c0;</i><span class="account-text">Account</span></a>
+        <div class="PROFILE-NAVIGATE">
+        <a href="profile.html">📑 &nbsp; Orders</a> 
+        <a href="profile.html">웃 &nbsp; Profile</a>
+        <a href="profile.html">⍌ &nbsp; Wallet</a>
+        <a href="profile.html">♡ &nbsp; Wishlist</a>
+        <a class="Sign-Out">⊘ &nbsp; Logout</a>
+        </div>
     </div>
     <div>
         <span class="cart--icon"><i style="font-size:20px" class="fa">&#xf290;</i></span>
