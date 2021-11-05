@@ -231,9 +231,12 @@ let cart__icon = document.querySelector(".cart--icon")
 cart__icon.addEventListener("click" , ShowShoppingBag)
 
 let shoppingBag = document.querySelector(".Shopping-bag-box")
-
+let chat_ty = document.querySelector(".chatbox")
+let arrowto_UP = document.querySelector(".arrow") 
 function ShowShoppingBag() {
     shoppingBag.style.display = "block"
+    chat_ty.style.display = "none"
+    arrowto_UP.style.display = "none"
 }
 
 let shoppingBackBtn = document.querySelector(".shoppingback-btn")
@@ -242,6 +245,8 @@ shoppingBackBtn.addEventListener("click" , HideShoppingBag)
 
 function HideShoppingBag() {
     shoppingBag.style.display = "none"
+    chat_ty.style.display = "block"
+    arrowto_UP.style.display = "block"
 }
 
 
