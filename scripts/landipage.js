@@ -131,6 +131,11 @@ move.addEventListener("click",()=>{
 })
 
 // onchan func for hide chat option and explor chatbox
+let HideChatBox___ = document.querySelector(".cl")
+let ShowChatBox___ = document.querySelector(".chatbox")
+ShowChatBox___.addEventListener("click" , exchat)
+HideChatBox___.addEventListener("click" , clos)
+
 function exchat()
 {
   let explorechat = document.getElementById("explr");

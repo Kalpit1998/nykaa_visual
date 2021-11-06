@@ -16,6 +16,8 @@ if(localStorage.getItem("userData") === null) {
 let footerpage = document.querySelector("footer")
 footerpage.innerHTML = FOOTER()
 
+
+
 //nykaa dhamaka
 let nykaa_dhamaka = document.getElementById("nykaa-dhamaka")
 let flag = true

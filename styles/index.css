@@ -50,7 +50,7 @@ li {
   font-size: 22px;
   margin-top: 1.8%;
   margin-left: 25%;
-
+  cursor: pointer;
   font-weight: bolder;
 }
 .chatbox {
@@ -64,6 +64,7 @@ li {
   width: 18%;
   position: fixed;
   box-shadow: 0px 0px 18px rgba(31, 29, 29, 0.5);
+  cursor: pointer;
 }
 .arrow {
   top: 600px;
@@ -80,6 +81,7 @@ li {
   padding-top: 0.8%;
   box-shadow: 0px 0px 18px rgba(31, 29, 29, 0.5);
   z-index: 90;
+  cursor: pointer;
 }
 .arrow img {
   max-width: 100%;
