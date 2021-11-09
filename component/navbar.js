@@ -24,7 +24,7 @@ function navbar() {
     <ul class="second-navlist">
       <li> <a href="index.html"><img src="https://th.bing.com/th/id/OIP.FtW_F_xyCB7utV0PyI8FeAHaCb?w=308&h=114&c=7&r=0&o=5&pid=1.7" alt=""  id="nykaa-logo"></a></li>
        <li><a href="/">CATEGORIES</li></a>
-       <li><a href="/" class="show-brandbox">BRANDS</a></li>
+       <li><a href="ProductNykaaCosmetics.html" class="show-brandbox">BRANDS</a></li>
        <li><a href="/" class="show-nykaa_fashionBox">NYKAA FASHION</a></li>
        <li><a href="/" class="Show-nykaa-beautybox">BEAUTY ADVICE</a></li>
        <li><a href="/">NYKAA NETWORK</a></li>
