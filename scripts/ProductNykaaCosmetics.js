@@ -62,7 +62,6 @@ let Categery = document.querySelector(".Categery")
 Categery.addEventListener("click" , ShowCategoryBoxes)
 
 let CATCUT = document.querySelector(".CATCUT")
-//CATCUT.addEventListener("click" , HideCategoryBoxes)
 
 
 let CATDOWN =  document.querySelector(".CATDOWN")
@@ -94,12 +93,45 @@ function ShowCategoryBoxes() {
 
 
 
+let Makeup_resulflag = true
 
 
 function ShowMakeupResul() {
+  if(Makeup_resulflag) {
   Makeup_resul.style.display = "grid"
+  Makeup_resulflag = false
+  }else {
+    Makeup_resul.style.display = "none"
+    Makeup_resulflag = true
+  }
 }
 
+
+let FPRICE = document.querySelector(".FPRICE")
+let PRICEMULTI = document.querySelector(".PRICEMULTI")
+let PriDOWN = document.querySelector(".PriDOWN")
+let PriCUT = document.querySelector(".PriCUT")
+
+FPRICE.addEventListener("click" , SHOWPriceFil)
+
+let FPRICEflag = true
+
+function SHOWPriceFil() {
+  if(FPRICEflag) {
+    PRICEMULTI.style.display = "grid"
+    PriDOWN.style.display = "none"
+    PriCUT.style.display = "block"
+    FPRICEflag = false
+  }else {
+
+    PRICEMULTI.style.display = "none"
+    PriDOWN.style.display = "block"
+    PriCUT.style.display = "none"
+    FPRICEflag = true
+
+  }
+
+}
 
 
 
@@ -147,7 +179,7 @@ data.forEach((prod) => {
 
   let mrp = document.createElement("p")
   mrp.setAttribute("class" , "mrp-text")
-  mrp.textContent = "MRP : "
+  mrp.textContent = "MRP : ₹"
 
   mrp_price = document.createElement("p")
   mrp_price.textContent = mrp.textContent + prod.price
@@ -229,4 +261,61 @@ function GoToProductDetail(proDet) {
     window.location.href = "ProductDetail.html"
   },2500)
 
+}
+
+let SORTPOPULARITY = document.querySelector(".SORTPOPULARITY")
+SORTPOPULARITY.addEventListener("click" , fnSORTPOPULARITY)
+
+
+let pop_texts = document.querySelector(".pop-texts")
+
+
+let SORTHIGHTOLOW = document.querySelector(".SORTHIGHTOLOW")
+SORTHIGHTOLOW.addEventListener("click" , fnSORTHIGHTOLOW)
+
+ async function fnSORTHIGHTOLOW() {
+
+
+  let res = await fetch(`http://localhost:5000/api/products`)
+
+  let data = await res.json()
+    
+    let arr = data.sort(function (a,b){
+    
+      return b.price - a.price
+    })
+   AppendToProCont(arr)
+   SORTPOPULARITY.style.backgroundColor = "#fff"
+   SORTHIGHTOLOW.style.backgroundColor = "#fc3a84"
+   SORTLOWTOHIGH.style.backgroundColor = "#fff"
+   pop_texts.textContent = "Price: High To Low"
+    
+}
+
+let SORTLOWTOHIGH = document.querySelector(".SORTLOWTOHIGH")
+SORTLOWTOHIGH.addEventListener("click" , fnSORTLOWTOHIGH)
+
+async function fnSORTLOWTOHIGH() {
+
+  let res = await fetch(`http://localhost:5000/api/products`)
+
+  let data = await res.json()
+    
+    let arr = data.sort(function (a,b){
+    
+      return a.price - b.price
+    })
+   AppendToProCont(arr)
+   SORTPOPULARITY.style.backgroundColor = "#fff"
+  SORTHIGHTOLOW.style.backgroundColor = "#fff"
+  SORTLOWTOHIGH.style.backgroundColor = "#fc3a84"
+   pop_texts.textContent = "Price: Low To High"
+}
+
+
+function fnSORTPOPULARITY() {
+  pop_texts.textContent = "Popularity"
+  SORTPOPULARITY.style.backgroundColor = "#fc3a84"
+  SORTHIGHTOLOW.style.backgroundColor = "#fff"
+  SORTLOWTOHIGH.style.backgroundColor = "#fff"
 }
