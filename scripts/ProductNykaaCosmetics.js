@@ -57,6 +57,176 @@ function ShowOptionsForSortBy() {
 //     UpArrows.style.display = "none"
 // }   
 
+let Categery = document.querySelector(".Categery")
+
+Categery.addEventListener("click" , ShowCategoryBoxes)
+
+let CATCUT = document.querySelector(".CATCUT")
+//CATCUT.addEventListener("click" , HideCategoryBoxes)
+
+
+let CATDOWN =  document.querySelector(".CATDOWN")
+
+
+let Multiple = document.querySelector(".multiple")
+
+let CATMAKEUP = document.querySelector(".CATMAKEUP")
+CATMAKEUP.addEventListener("click" , ShowMakeupResul)
+
+let Makeup_resul = document.querySelector(".Makeup-resul")
+
+let catflag = true
+
+function ShowCategoryBoxes() {
+  if(catflag == true) {
+  
+  Multiple.style.display = "block"
+  CATCUT.style.display = "block"
+  CATDOWN.style.display = "none" 
+  catflag = false
+  } else {
+    Multiple.style.display = "none"
+    CATCUT.style.display = "none"
+    CATDOWN.style.display = "block"
+    catflag = true
+  }
+}
 
 
 
+
+
+function ShowMakeupResul() {
+  Makeup_resul.style.display = "grid"
+}
+
+
+
+
+
+// Products container
+
+let Products_Container = document.querySelector(".NykaaCosProducts-Container")
+
+async function GETCosNykaaProducts() {
+
+  let res = await fetch(`http://localhost:5000/api/products`)
+
+  let data = await res.json()
+
+  AppendToProCont(data)
+
+}
+
+GETCosNykaaProducts()
+
+function AppendToProCont(data) {
+
+  Products_Container.innerHTML = null
+
+data.forEach((prod) => {
+
+  let maindiv = document.createElement("div")
+  maindiv.setAttribute("class" , "main__div")
+
+  let div = document.createElement("div")
+  div.setAttribute("class" , "prod_box")
+
+
+
+  let image = document.createElement("img")
+  image.src = prod.img1
+
+  div.onclick = function() {
+    GoToProductDetail(prod)
+  }
+
+  let pname = document.createElement("p")
+  pname.setAttribute("class", "pname")
+  pname.textContent = prod.name.substring(0,50)
+
+  let mrp = document.createElement("p")
+  mrp.setAttribute("class" , "mrp-text")
+  mrp.textContent = "MRP : "
+
+  mrp_price = document.createElement("p")
+  mrp_price.textContent = mrp.textContent + prod.price
+
+  let rati = document.createElement("p")
+  rati.setAttribute("class" , "starating")
+  rati.textContent = prod.rating
+
+  let btndiv = document.createElement("div")
+  btndiv.setAttribute("class" , "btn_div")
+
+  let wish_btn = document.createElement("button")
+  wish_btn.setAttribute("class" , "wish_btn")
+  wish_btn.innerText = "♡"
+
+  wish_btn.onclick = function() {
+    AddToWishStore(prod)
+  }
+
+  let cart_btn = document.createElement("button")
+  cart_btn.setAttribute("class" , "cart_btn")
+  cart_btn.innerText = "ADD TO BAG"
+
+  cart_btn.onclick = function() {
+    AddToCartStore(prod)
+  }
+
+  if(prod.brand == "nykaa cosmetics") {
+
+  btndiv.append(wish_btn, cart_btn)
+
+  div.append(image,pname, mrp_price, rati)
+  maindiv.append(div, btndiv)
+  Products_Container.append(maindiv)
+  }
+
+})
+
+}
+
+if(localStorage.getItem("NykaaWish") === null) {
+  localStorage.setItem("NykaaWish" , JSON.stringify([]))
+}
+
+if(localStorage.getItem("NykaaCart") === null) {
+  localStorage.setItem("NykaaCart" , JSON.stringify([]))
+}
+
+function AddToCartStore(prodct) {
+  let getCartStore = JSON.parse(localStorage.getItem("NykaaCart"))
+
+  getCartStore.push(prodct)
+
+  localStorage.setItem("NykaaCart" , JSON.stringify(getCartStore))
+
+}
+
+function AddToWishStore(prodWish) {
+  let getWishStore = JSON.parse(localStorage.getItem("NykaaWish"))
+
+  getWishStore.push(prodWish)
+
+  localStorage.setItem("NykaaWish" , JSON.stringify(getWishStore))
+
+}
+
+if(localStorage.getItem("ProductDetail") === null) {
+  localStorage.setItem("ProductDetail" , JSON.stringify([]))
+}
+
+function GoToProductDetail(proDet) {
+
+  let getProdDet = JSON.parse(localStorage.getItem("ProductDetail"))
+  getProdDet.push(proDet)
+  
+  localStorage.setItem("ProductDetail" , JSON.stringify(getProdDet))
+
+  setTimeout(() => {
+    window.location.href = "ProductDetail.html"
+  },2500)
+
+}
