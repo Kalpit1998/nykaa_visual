@@ -24,7 +24,7 @@ function navbar() {
     <ul class="second-navlist">
       <li> <a href="index.html"><img src="https://th.bing.com/th/id/OIP.FtW_F_xyCB7utV0PyI8FeAHaCb?w=308&h=114&c=7&r=0&o=5&pid=1.7" alt=""  id="nykaa-logo"></a></li>
        <li><a href="/">CATEGORIES</li></a>
-       <li><a href="/" class="show-brandbox">BRANDS</a></li>
+       <li><a href="ProductNykaaCosmetics.html" class="show-brandbox">BRANDS</a></li>
        <li><a href="/" class="show-nykaa_fashionBox">NYKAA FASHION</a></li>
        <li><a href="/" class="Show-nykaa-beautybox">BEAUTY ADVICE</a></li>
        <li><a href="/">NYKAA NETWORK</a></li>
@@ -40,7 +40,7 @@ function navbar() {
         <a id="FOR-Logged"><i id="user--icon" class="fa">&#xf2c0;</i><span class="user-name">Ankit</span></a>
         <div class="PROFILE-NAVIGATE">
         <a href="profile.html">📑 &nbsp; Orders</a> 
-        <a href="profile.html">웃 &nbsp; Profile</a>
+        <a href="Myprofile.html">웃 &nbsp; Profile</a>
         <a href="profile.html">⍌ &nbsp; Wallet</a>
         <a href="profile.html">♡ &nbsp; Wishlist</a>
         <a class="Sign-Out" href="index.html">⊘ &nbsp; Logout</a>
