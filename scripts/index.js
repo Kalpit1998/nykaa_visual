@@ -271,6 +271,9 @@ if(localStorage.getItem("NykaaCart") === null) {
       Show_products_boxescont.style.display = "none"
   }
 
+  if(localStorage.getItem("NykaaTotal") === null) {
+      localStorage.setItem("NykaaTotal" , JSON.stringify([]))
+  }
 
   let getLocalCart = JSON.parse(localStorage.getItem("NykaaCart"))
 
@@ -310,6 +313,10 @@ let grandtotal = 0
     dlt_btn.setAttribute("class" , "cart-delete-btn")
     dlt_btn.innerHTML = `<img src="https://th.bing.com/th/id/OIP.EKnSPMgkce4XjqWPt-FIzgHaHa?w=178&h=180&c=7&r=0&o=5&pid=1.7" alt="">`
 
+    dlt_btn.onclick = function() {
+        DeleteFrom_Bag(produ,dlt_btn)
+    }
+
     dlt_div.append(dlt_btn)
 
     let qty_price_div = document.createElement("div")
@@ -345,10 +352,31 @@ let grandtotal = 0
 
   })
 
-  let grand_text = document.querySelector(".Toatlrupee")
-    grand_text.textContent = "₹" +  grandtotal
+  let NykaaTotal = JSON.parse(localStorage.getItem("NykaaTotal"))
+    NykaaTotal.push(grandtotal)
+    localStorage.setItem("NykaaTotal" , JSON.stringify(NykaaTotal))
+    
 }
 
+let NykaaTotal = JSON.parse(localStorage.getItem("NykaaTotal"))
+
+let grand_text = document.querySelector(".Toatlrupee")
+grand_text.textContent = "₹" +  NykaaTotal[NykaaTotal.length-1]
+
+localStorage.setItem("NykaaTotal" , JSON.stringify(NykaaTotal))
+
+
+
+
+function DeleteFrom_Bag(produ, dlt_btn) {
+    let getCartStORE = JSON.parse(localStorage.getItem("NykaaCart"))
+    let index = getCartStORE.indexOf(produ)
+    getCartStORE.splice(index, 1)
+    localStorage.setItem("NykaaCart" , JSON.stringify(getCartStORE))
+
+    dlt_btn.parentNode.parentNode.remove()
+
+}
 
 
 
@@ -552,7 +580,7 @@ second_search.addEventListener("input" , ShowSearchResultBox)
 body.addEventListener("click" , HIDESearchResultBox)
 
 function ShowSearchResultBox() {
-    search_resultbox.style.display = "block"
+    search_resultbox.style.display = "flex"
     search__container.style.border = "2px solid #FC2779"
     search__container.style.backgroundColor = "#F4F4F4"
 }
@@ -783,12 +811,32 @@ sign_out.addEventListener("click" , SIGNOUT)
 
 function SIGNOUT() {
     JSON.parse(localStorage.removeItem("userData"))
-    
-    // setTimeout(() => {
-    //     // if(localStorage.getItem("userData") === null) {
-    //     //     localStorage.setItem("userData" , JSON.stringify([]))
-    //     // }
-    //     window.location.href = ""
-    // },1500)
 }
 
+
+
+// APPLY COUPON CODE 
+
+let Apply_Button = document.querySelector(".apply__btn")
+let input_coupon = document.querySelector(".input_coupon")
+
+Apply_Button.addEventListener("click" , UpdateGrandPrice)
+
+function UpdateGrandPrice() {
+
+    let NykaaTotal = JSON.parse(localStorage.getItem("NykaaTotal"))
+
+    if(input_coupon.value == "masai30" || input_coupon.value == "teamBoom") {
+        let grand_text = document.querySelector(".Toatlrupee")
+    let grandto = NykaaTotal[NykaaTotal.length-1]
+    let total_ = (Number(grandto) -  (Number(grandto) * 0.3)).toFixed(2)
+    NykaaTotal.push(total_)
+        grand_text.textContent = total_
+
+}else {
+    alert("Invalid Coupon Code")
+}
+
+localStorage.setItem("NykaaTotal", JSON.stringify(NykaaTotal))
+    input_coupon.value = ""
+}
