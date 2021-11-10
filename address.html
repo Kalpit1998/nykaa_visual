@@ -30,7 +30,7 @@
         <div class="line"></div>
         <div class="login ps-3 pt-3">
           <p class="mb-0 ms-0">1 - LOGIN</p>
-          <p class="mt-0 smallemail ms-0">maihuriagaurav16@gmail.com</p>
+          <p class="mt-0 smallemail ms-0"></p>
         </div>
         <div class="line"></div>
         <div class="address pt-4 ps-3">
@@ -45,11 +45,30 @@
     </div>
 
     <div class="contain mt-4 d-flex">
-      <div class="newadress shadow-sm bg-body mt-3">
+      
+      <div class="select-address-type">
+      
+      <div class="newadress shadow-sm bg-body mt-3 savedADDRESSES">
+        <p class="mt-3">Saved Addresses</p>
+      </div>
+      <div class="newadress shadow-sm bg-body newADDRESSES">
         <p class="mt-3">New Address</p>
       </div>
 
-      <div class="addresstake bg-body shadow-sm d-flex flex-column mt-3">
+    </div>
+
+    <div class="saved-addresses-cont">
+      <p class="Uname">Ankit</p>
+      <p class="Uaddress">Champa</p>
+      <p class="Upostel">pin code : 495671</p>
+      <p class="Umobile">7000811709</p>
+      <div class="edit-ship-cont">
+      <button class="add-edit-btn">✎EDIT</button>
+      <button class="redirect_paybtn">SHIP TO THIS ADDRESS > </button>
+      </div>
+    </div>
+
+      <div class="addresstake bg-body shadow-sm mt-3" id="newaddress-box">
         <p class="ms-3 mt-3">New address</p>
         <div class="hor"></div>
 
@@ -102,7 +121,7 @@
       </div>
 
       <div class="iteambag mt-3">
-        <button class="collapsible shadow-lg mt-2">1 iteam in your begs</button>
+        <button class="collapsible shadow-lg mt-2"><span class="number__cart"></span> item in your begs</button>
         <div class="content" id="cartiteam">
           gghiuhdsijfdsijfdioujfdifidoujfdioifdioujfgiuj
         </div>
@@ -112,15 +131,15 @@
           <div class="price-cont bg-body">
             <div class="subtotal mt-3">
               <div>subtotal</div>
-              <div id="subt">gaurav</div>
+              <div id="subt"></div>
             </div>
             <div class="shc mt-3">
               <div>Shipping Charge</div>
-              <div id="sc">gaurav</div>
+              <div id="sc">FREE</div>
             </div>
             <div class="ds mt-3">
               <div class="deta">Discount</div>
-              <div id="dis">gaurav</div>
+              <div id="dis">0</div>
             </div>
 
             <div class="usereward mt-3 ">
@@ -129,7 +148,7 @@
             </div>
             <div class="grandt mt-3 mb-3">
               <div class="tre">Grand Total</div>
-              <div id="usrewt">Apply</div>
+              <div id="usrewt"></div>
             </div>
 
 
@@ -138,6 +157,32 @@
         </div>
       </div>
     </div>
+
+
+    <div class="foot_address">
+      <div>
+        <img src="https://th.bing.com/th/id/OIP.EQr6-76DBAMuLdtRXFlyWQHaHa?w=209&h=209&c=7&r=0&o=5&pid=1.7" alt="">
+        <div>
+          <p class="gui_text">GENUINE PRODUCTS</p>
+          <P class="sma_text">Sourced Directly From Brands</P>
+        </div>
+      </div>
+      <div>
+        <img src="https://th.bing.com/th/id/OIP.d4sjG9Ay47GGHe2JSL2O-wHaHa?w=196&h=196&c=7&r=0&o=5&pid=1.7" alt="">
+        <div>
+          <p class="gui_text">FREE SHIPPING</p>
+          <P class="sma_text">For Orders Above Rs.499</P>
+        </div>
+      </div>
+      <div>
+        <img src="https://th.bing.com/th/id/OIP.hhXKJ5JrQdUmw2uKPf05qAAAAA?w=174&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+        <div>
+          <p class="gui_text">SECURE PAYMENTS</p>
+          <P class="sma_text">Using 128-bit SSL Encryption</P>
+        </div>
+      </div>
+    </div>
+
   </body>
  <script src="./scripts/address.js"></script>
 </html>
