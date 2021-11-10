@@ -318,4 +318,5 @@ function fnSORTPOPULARITY() {
   SORTPOPULARITY.style.backgroundColor = "#fc3a84"
   SORTHIGHTOLOW.style.backgroundColor = "#fff"
   SORTLOWTOHIGH.style.backgroundColor = "#fff"
+  GETCosNykaaProducts()
 }
