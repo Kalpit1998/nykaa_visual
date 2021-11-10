@@ -67,7 +67,6 @@ body {
 .contain {
   width: 80%;
   transform: translateX(14%);
-  border: 1px solid red;
 }
 
 .smallemail {
@@ -87,10 +86,10 @@ body {
   width: 43%;
 
   margin-left: 1%;
+
 }
 .iteambag {
   width: 30%;
-  border: 1px solid black;
   margin-left: 1%;
 }
 
@@ -109,8 +108,7 @@ body {
   margin-left: 2%;
   margin-right: 0px;
 }
-.smalltera {
-}
+
 .smallmera {
   margin-top: -2%;
 }
@@ -151,7 +149,6 @@ button {
 }
 .iteambag {
   width: 30%;
-  border: 1px solid red;
   height: 30vh;
   background-color: #fff;
 }
@@ -216,10 +213,109 @@ button {
 .grandt{
     display: flex;
 }
-.tre{
-  
-}
+
 #usrewt{
     margin-left: 62%;
     font-size: 16px;
+}
+
+
+.select-address-type{
+  display: flex;
+  flex-direction: column;
+}
+.newadress{
+  padding-left: 10px;
+  width: 300px;
+  margin-top: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+#newaddress-box{
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+.saved-addresses-cont{
+  width: 43%;
+  margin-left: 1%;
+  background-color: white;
+  margin-top: 1rem;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+  padding: 1rem;
+}
+.saved-addresses-cont> p {
+  margin: 10px 0;
+}
+.edit-ship-cont{
+  display: grid;
+  grid-template-columns: 15% 80%;
+  margin-top: 3rem;
+}
+.add-edit-btn{
+  background-color: #fff;
+  color: grey;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.redirect_paybtn{
+  width: 100%;
+font-size: 16px;
+  font-weight: 500;
+}
+.savedADDRESSES{
+  border-right: 3px solid #fc2779;
+}
+#cartiteam{
+  
+  background-color: rgba(0, 0, 0, 0.1);
+
+}
+.main__div{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 68%;
+  grid-gap: 2%;
+  background-color: #fff;
+  margin-top: 10px;
+  box-shadow: 0 4px 2px 0 rgba(17, 16, 16, 0.2);
+  font-size: 14px;
+  border-radius: 5px;
+
+}
+.qpdiv{
+  display: flex;
+  justify-content: space-between;
+}
+
+.text__div{
+  padding: 10px;
+}
+.cartimg_div img {
+
+  width: 100%;
+}
+
+.foot_address{
+  width: 80%;
+  margin:10rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.foot_address > div {
+  display: grid;
+  grid-template-columns: 24% 70%;
+  grid-gap: 6%;
+}
+.foot_address > div > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.sma_text{
+  font-size: 12px;
+}
+.gui_text {
+  font-size: 14px;
 }
