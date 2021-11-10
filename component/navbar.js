@@ -3,7 +3,7 @@ function navbar() {
     return `
     <div class="first-bar">
     <div id="nykaa-dhamaka">
-<a href="landingpage.html"><p class="nykaa-dhamaka">NYKAA DIWALI DHAMAKA SALE UPTO 50% OFF Sparkle This Festive Season</p></a>
+<a href="landingpage.html"><p class="nykaa-dhamaka">BEAUTY BONANZA Get Your Daily Dose Of Amazing Deals</p></a>
     </div>        
 
 <ul class="nav-list">
@@ -39,10 +39,10 @@ function navbar() {
         <a id="FOR-Sign" href="http://localhost:5500/Signin.html"><i id="user--icon" class="fa">&#xf2c0;</i><span class="account-text">Account</span></a>
         <a id="FOR-Logged"><i id="user--icon" class="fa">&#xf2c0;</i><span class="user-name">Ankit</span></a>
         <div class="PROFILE-NAVIGATE">
-        <a href="Myprofile.html">📑 &nbsp; Orders</a> 
+        <a href="profile.html">📑 &nbsp; Orders</a> 
         <a href="Myprofile.html">웃 &nbsp; Profile</a>
-        <a href="Myprofile.html">⍌ &nbsp; Wallet</a>
-        <a href="Myprofile.html">♡ &nbsp; Wishlist</a>
+        <a href="profile.html">⍌ &nbsp; Wallet</a>
+        <a href="Mywish.html">♡ &nbsp; Wishlist</a>
         <a class="Sign-Out" href="index.html">⊘ &nbsp; Logout</a>
         </div>
     </div>
@@ -55,7 +55,17 @@ function navbar() {
 </div>
 
 <div 
-class="search-resultbox"></div>
+class="search-resultbox">
+
+<p class="trending-search-text">Trending Searches</p>
+<a href="ProductNykaaCosmetics.html">↝ Nykaa Cosmetics</a>
+<a href="ProductNykaaCosmetics.html">↝ Nykaa Naturals</a>
+<a href="ProductNykaaCosmetics.html">↝ Nykaa Popular Products</a>
+<a href="ProductNykaaCosmetics.html">↝ Nykaa Cosmetics Lipstick</a>
+<a href="ProductNykaaCosmetics.html">↝ Nykaa Cosmetics Eyes products</a>
+<a href="ProductNykaaCosmetics.html">↝ Nykaa Cosmetics Hair products</a>
+
+</div>
 
 
 <div class="brand-box">
@@ -701,24 +711,16 @@ class="search-resultbox"></div>
     </div>
 
     <div class="Show-products-boxescont">
+<div class="apply-couponbox">
+    <input type="text" placeholder="Coupon Code for Discount" class="input_coupon">
+<button class="apply__btn">Apply</button>
+ </div>   
+    <div class="multiple_prod_box">
     
-    
-        <div class="showCart-Products">
-       <div class="cart-product-img">
-           <img src="https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/9/a/9a34d3c885190822089_001.jpg" alt="">
-       </div>
-       <div >
-           <p class="cart-product-name">PIXI GLOWgycolic boost(pack of 3)</p>
-       </div>
-       <div >
-           <button class="cart-delete-btn"><img src="https://th.bing.com/th/id/OIP.EKnSPMgkce4XjqWPt-FIzgHaHa?w=178&h=180&c=7&r=0&o=5&pid=1.7" alt=""></button>
-       </div>
-       <div class="qty-price">
-           <p class="Quantity">Quantity : <span class="QTY-NUM">1</span> ▼</p>
-           <p class="PRODUCT-PRICE">1500</p>
-       </div>
+   
     </div>
-    
+
+   
 
     <div class="total-proceed">
         <div class="grand-total">
