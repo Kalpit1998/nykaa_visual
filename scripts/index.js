@@ -252,16 +252,293 @@ function HideShoppingBag() {
 }
 
 
+
+
+
 //shopping bag start
+
 
 let Show_products_boxescont = document.querySelector(".Show-products-boxescont")
 let ifempty = document.querySelector(".ifempty")
 
 
-if(Show_products_boxescont.innerHTML === null) {
-    ifempty.style.display = "block"
+if(localStorage.getItem("NykaaCart") === null) {
+    localStorage.setItem("NykaaCart" , JSON.stringify([]))
+  }
+
+  if(JSON.parse(localStorage.getItem("NykaaCart")).length == 0) {
+      ifempty.style.display = "block"
+      Show_products_boxescont.style.display = "none"
+  }
+
+
+  let getLocalCart = JSON.parse(localStorage.getItem("NykaaCart"))
+
+  //let showCart_Products = document.querySelector(".showCart-Products")
+  let multiple_prod_box = document.querySelector(".multiple_prod_box")
+
+  function appendtobag(art) {
+    
+let grandtotal = 0
+    multiple_prod_box.innerHTML = null
+  art.forEach((produ) => {
+
+    grandtotal = grandtotal + Number(produ.price)
+    let showCart_Products = document.createElement("div")
+    showCart_Products.setAttribute("class" , "showCart-Products")
+
+    let img_div = document.createElement("div")
+    img_div.setAttribute("class" , "cart-product-img")
+
+
+    let proima = document.createElement("img")
+    proima.src = produ.img1
+
+    img_div.append(proima)
+
+    let pronm_div = document.createElement("div")
+
+    let pronm = document.createElement("p")
+    pronm.setAttribute("class" , "cart-product-name")
+    pronm.textContent = produ.name.substring(0,30)
+
+    pronm_div.append(pronm)
+
+    let dlt_div = document.createElement("div")
+
+    let dlt_btn = document.createElement("button")
+    dlt_btn.setAttribute("class" , "cart-delete-btn")
+    dlt_btn.innerHTML = `<img src="https://th.bing.com/th/id/OIP.EKnSPMgkce4XjqWPt-FIzgHaHa?w=178&h=180&c=7&r=0&o=5&pid=1.7" alt="">`
+
+    dlt_div.append(dlt_btn)
+
+    let qty_price_div = document.createElement("div")
+    qty_price_div.setAttribute("class" , "qty-price")
+
+    let span = document.createElement("span")
+   // span.setAttribute("class" , "QTY-NUM")
+    span.setAttribute("id" , `${produ.id}`)
+    span.textContent = "1"
+
+    let qty_p11 = document.createElement("p")
+    qty_p11.setAttribute("class" , "Quantity")
+    qty_p11.innerText = `Quantity : ${span.textContent} ▼`
+
+
+
+    qty_p11.onclick = function() {
+        changeContent(produ.id)
+    }
+
+
+    let qty_p12 = document.createElement("p")
+    qty_p12.setAttribute("class" , "PRODUCT-PRICE")
+
+    qty_p12.textContent = "₹" + produ.price
+
+    
+
+    qty_price_div.append(qty_p11, qty_p12)
+
+    showCart_Products.append(img_div, pronm_div, dlt_div, qty_price_div)
+    multiple_prod_box.append(showCart_Products)
+
+  })
+
+  let grand_text = document.querySelector(".Toatlrupee")
+    grand_text.textContent = "₹" +  grandtotal
+}
+
+
+
+
+
+function changeContent(ID) {
+    let QTY_BOX = document.querySelector(".QTY--BOX")
+    QTY_BOX.style.display = "grid"
+    
+    let getpitem = document.getElementById(`${ID}`)
+
+let qty1 = document.querySelector(".qty1")
+let qty2 = document.querySelector(".qty2")
+let qty3 = document.querySelector(".qty3")
+let qty4 = document.querySelector(".qty4")
+let qty5 = document.querySelector(".qty5")
+
+qty1.addEventListener("click" , EDITPrice1)
+qty2.addEventListener("click" , EDITPrice2)
+qty3.addEventListener("click" , EDITPrice3)
+qty4.addEventListener("click" , EDITPrice4)
+qty5.addEventListener("click" , EDITPrice5)
+
+//let Quantity = document.querySelector(".Quantity")
+
+let PRODUCT_PRICE = document.querySelector(".PRODUCT-PRICE")
+
+
+
+function EDITPrice1() {
+    qty1.style.backgroundColor = "#FC2779"
+
+
+    setTimeout(() => {
+        QTY_BOX.style.display = "none"
+        qty1.style.backgroundColor = "#fff"
+        getpitem.textContent = "1"
+    },1500)
     
 }
+
+
+function EDITPrice2() {
+    qty2.style.backgroundColor = "#FC2779"
+
+    setTimeout(() => {
+        QTY_BOX.style.display = "none"
+        qty2.style.backgroundColor = "#fff"
+        PRODUCT_PRICE.textContent = Number(PRODUCT_PRICE.textContent) * 2
+        getpitem.textContent = "2"
+    },1500)
+    
+}
+
+
+function EDITPrice3() {
+    qty3.style.backgroundColor = "#FC2779"
+
+    setTimeout(() => {
+        QTY_BOX.style.display = "none"
+        qty3.style.backgroundColor = "#fff"
+        getpitem.textContent = "3"
+    },1500)
+    
+}
+
+
+function EDITPrice4() {
+    qty4.style.backgroundColor = "#FC2779"
+
+    setTimeout(() => {
+        QTY_BOX.style.display = "none"
+        qty4.style.backgroundColor = "#fff"
+        getpitem.textContent = "4"
+    },1500)
+    
+}
+
+
+
+function EDITPrice5() {
+    qty5.style.backgroundColor = "#FC2779"
+
+    setTimeout(() => {
+        QTY_BOX.style.display = "none"
+        qty5.style.backgroundColor = "#fff"
+        getpitem.textContent = "5"
+    },1500)
+    
+}
+
+}
+
+
+
+appendtobag(getLocalCart)
+localStorage.setItem("NykaaCart" , JSON.stringify(getLocalCart))
+
+
+
+
+// QUANTITY WORK FOR NAVBAR
+
+
+// let qty1 = document.querySelector(".qty1")
+// let qty2 = document.querySelector(".qty2")
+// let qty3 = document.querySelector(".qty3")
+// let qty4 = document.querySelector(".qty4")
+// let qty5 = document.querySelector(".qty5")
+
+// let Quantity = document.querySelector(".Quantity")
+// let QTY_NUM = document.querySelector(".QTY-NUM")
+
+// let QTY_BOX = document.querySelector(".QTY--BOX")
+
+
+// let PRODUCT_PRICE = document.querySelector(".PRODUCT-PRICE")
+
+// Quantity.addEventListener("click" , SHOWQTYBOX)
+
+// function SHOWQTYBOX() {
+//     QTY_BOX.style.display = "grid"
+// }
+
+// //PENDING.......
+// qty1.addEventListener("click" , EDITPrice1)
+// qty2.addEventListener("click" , EDITPrice2)
+// qty3.addEventListener("click" , EDITPrice3)
+// qty4.addEventListener("click" , EDITPrice4)
+// qty5.addEventListener("click" , EDITPrice5)
+
+// function EDITPrice1() {
+//     qty1.style.backgroundColor = "#FC2779"
+
+
+//     setTimeout(() => {
+//         QTY_BOX.style.display = "none"
+//         qty1.style.backgroundColor = "#fff"
+//         QTY_NUM.textContent = "1"
+//     },1500)
+    
+// }
+
+
+// function EDITPrice2() {
+//     qty2.style.backgroundColor = "#FC2779"
+
+//     setTimeout(() => {
+//         QTY_BOX.style.display = "none"
+//         qty2.style.backgroundColor = "#fff"
+//         QTY_NUM.textContent = "2"
+//     },1500)
+    
+// }
+
+
+// function EDITPrice3() {
+//     qty3.style.backgroundColor = "#FC2779"
+
+//     setTimeout(() => {
+//         QTY_BOX.style.display = "none"
+//         qty3.style.backgroundColor = "#fff"
+//         QTY_NUM.textContent = "3"
+//     },1500)
+    
+// }
+
+
+// function EDITPrice4() {
+//     qty4.style.backgroundColor = "#FC2779"
+
+//     setTimeout(() => {
+//         QTY_BOX.style.display = "none"
+//         qty4.style.backgroundColor = "#fff"
+//         QTY_NUM.textContent = "4"
+//     },1500)
+    
+// }
+
+
+
+// function EDITPrice5() {
+//     qty5.style.backgroundColor = "#FC2779"
+
+//     setTimeout(() => {
+//         QTY_BOX.style.display = "none"
+//         qty5.style.backgroundColor = "#fff"
+//         QTY_NUM.textContent = "5"
+//     },1500)
+    
+// }
 
 
 //for search result
@@ -447,97 +724,6 @@ function HIDEluxe_Box() {
 }
 
 
-
-// QUANTITY WORK FOR NAVBAR
-
-
-let qty1 = document.querySelector(".qty1")
-let qty2 = document.querySelector(".qty2")
-let qty3 = document.querySelector(".qty3")
-let qty4 = document.querySelector(".qty4")
-let qty5 = document.querySelector(".qty5")
-
-let Quantity = document.querySelector(".Quantity")
-let QTY_NUM = document.querySelector(".QTY-NUM")
-
-let QTY_BOX = document.querySelector(".QTY--BOX")
-
-
-let PRODUCT_PRICE = document.querySelector(".PRODUCT-PRICE")
-
-Quantity.addEventListener("click" , SHOWQTYBOX)
-
-function SHOWQTYBOX() {
-    QTY_BOX.style.display = "grid"
-}
-
-//PENDING.......
-qty1.addEventListener("click" , EDITPrice1)
-qty2.addEventListener("click" , EDITPrice2)
-qty3.addEventListener("click" , EDITPrice3)
-qty4.addEventListener("click" , EDITPrice4)
-qty5.addEventListener("click" , EDITPrice5)
-
-function EDITPrice1() {
-    qty1.style.backgroundColor = "#FC2779"
-
-
-    setTimeout(() => {
-        QTY_BOX.style.display = "none"
-        qty1.style.backgroundColor = "#fff"
-        QTY_NUM.textContent = "1"
-    },1500)
-    
-}
-
-
-function EDITPrice2() {
-    qty2.style.backgroundColor = "#FC2779"
-
-    setTimeout(() => {
-        QTY_BOX.style.display = "none"
-        qty2.style.backgroundColor = "#fff"
-        QTY_NUM.textContent = "2"
-    },1500)
-    
-}
-
-
-function EDITPrice3() {
-    qty3.style.backgroundColor = "#FC2779"
-
-    setTimeout(() => {
-        QTY_BOX.style.display = "none"
-        qty3.style.backgroundColor = "#fff"
-        QTY_NUM.textContent = "3"
-    },1500)
-    
-}
-
-
-function EDITPrice4() {
-    qty4.style.backgroundColor = "#FC2779"
-
-    setTimeout(() => {
-        QTY_BOX.style.display = "none"
-        qty4.style.backgroundColor = "#fff"
-        QTY_NUM.textContent = "4"
-    },1500)
-    
-}
-
-
-
-function EDITPrice5() {
-    qty5.style.backgroundColor = "#FC2779"
-
-    setTimeout(() => {
-        QTY_BOX.style.display = "none"
-        qty5.style.backgroundColor = "#fff"
-        QTY_NUM.textContent = "5"
-    },1500)
-    
-}
 
 // FOR SIGN IN -> SIGN OUT
 
