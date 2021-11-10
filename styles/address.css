@@ -1,0 +1,198 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  body {
+    background-color: #f3f3f3;
+  }
+  .nav {
+    width: 100%;
+  
+    background-color: #fff;
+    box-sizing: border-box;
+  
+    display: flex;
+    height: 80px;
+  }
+  .logo {
+    width: 20%;
+  
+    margin-left: 5%;
+  }
+  
+  .option {
+    display: flex;
+    width: 40%;
+  
+    margin-left: 5%;
+  }
+  .login {
+    width: 31%;
+  
+    margin-left: 0.2%;
+    color: #3f414d;
+    font-size: 16px;
+    font-weight: 600;
+    overflow-x: hidden;
+  }
+  .address {
+    width: 31%;
+  
+    margin-left: 0.2%;
+    color: #fc2779;
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 3px solid #fc2779;
+  }
+  .payment {
+    width: 31%;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 0.2%;
+  }
+  .line {
+    background-color: #ebebeb;
+    height: 60px;
+    width: 0.1%;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 0px;
+  }
+  .line2 {
+    background-color: #ebebeb;
+    height: 60px;
+    width: 0.1%;
+    margin-top: 2%;
+    margin-left: 0px;
+  }
+  .contain {
+    width: 80%;
+    transform: translateX(14%);
+    border: 1px solid red;
+  }
+  
+  .smallemail {
+    font-size: 14px;
+    color: #8c8d94;
+    font-weight: 400;
+  }
+  .newadress {
+    width: 24.5%;
+    color: #fc2779;
+    font-size: 16px;
+    font-weight: 600;
+  
+    height: 7vh;
+  }
+  .addresstake {
+    width: 43%;
+  
+    margin-left: 1%;
+  }
+  .iteambag {
+    width: 30%;
+    border: 1px solid black;
+    margin-left: 1%;
+  }
+  .form-controlp {
+    display: block;
+    width: 100%;
+    padding: 0.375 rem 0.75 rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #0680fa;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1 px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25 rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  .list {
+    width: 100%;
+  }
+  .paymentmode {
+    width: 30%;
+  }
+  .hor {
+    width: 90%;
+    background-color: #ebebeb;
+  
+    height: 1px;
+    margin-top: -1%;
+    margin-left: 2%;
+    margin-right: 0px;
+  }
+  .smalltera {
+  }
+  .smallmera {
+    margin-top: -2%;
+  }
+  input:focus {
+    outline: none;
+  }
+  input {
+    border: none;
+  }
+  textarea:focus {
+    outline: none;
+  }
+  textarea {
+    border: 1px solid #ebebeb;
+    width: 90%;
+  }
+  input.largerCheckbox {
+    width: 17px;
+    height: 17px;
+    border: 1px solid #ebebeb;
+  }
+  
+  .che {
+    display: flex;
+  }
+  .text {
+    font-size: 16px;
+    margin-top: 0.3%;
+    margin-left: 2%;
+  }
+  button {
+    width: 90%;
+    background-color: #fc2779;
+    color: #fff;
+    outline: none;
+    border: none;
+    height: 5vh;
+  }
+  .iteambag {
+    width: 30%;
+    border: 1px solid red;
+    height: 50vh;
+    background-color: #fff;
+  }
+  .collapsible {
+    background-color: #fff;
+    color: #fea838;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active,
+  .collapsible:hover {
+    background-color: #fff;
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.2s ease-out;
+    background-color: #f1f1f1;
+  }
+  
