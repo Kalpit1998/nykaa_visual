@@ -104,8 +104,8 @@ body {
       width: 80%;
       margin: auto;
       display: grid;
-      grid-template-columns: 22%  72%;
-      grid-gap: 1%;
+      grid-template-columns: 22%  78%;
+      grid-gap: 2%;
   }
 
   .SortPopularityBox{
@@ -156,6 +156,203 @@ body {
   }
   .FilterFunctions-Box{
       margin-top: 1rem;
-      padding:0.8rem;
       background-color: #fff;
+      position: sticky;
+      top:17%;
+  }
+
+
+  .Categery{
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      padding-top: 5px;
+      padding-right: 0.8rem;
+      padding-left: 0.8rem;
+  }
+
+  .Cat-UpArrow {
+      display: none;
+      background-color: rgb(105, 102, 102);
+      color: white;
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      font-size: 8px;
+    text-align: center;
+    cursor: pointer;
+
+  }
+  .CatArrow{
+      font-size: 18px;
+      margin-right: 0.8rem;
+  }
+  .CATMAKEUP{
+    display: grid;
+    grid-template-columns: 90% 10%;
+    font-size: 14px;
+    padding: 0.8rem;
+  }
+  .Makeup-resul {
+    display: grid;
+    grid-template-columns: 95% 5%;
+    margin-left: 5%;
+    display: none;
+  }
+  .Makeup-resul > span {
+      margin-left: 95%;
+  }
+  .Makeup-resul > p {
+      font-size: 12px;
+  }
+
+  .multiple {
+      display: none;
+  }
+
+
+.FPRICE {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    border-top: 1px solid lightgray;
+    padding-top: 5px;
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+}
+.FDIS {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    border-top: 1px solid lightgray;
+    padding-top: 5px;
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+}
+.FAVG {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    border-top: 1px solid lightgray;
+    padding-top: 5px;
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+}
+.FPREF {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    border-top: 1px solid lightgray;
+    padding-top: 5px;
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+
+}
+.FCOLOR {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    border-top: 1px solid lightgray;
+    padding-top: 5px;
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+
+}
+.FFORMU {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    border-top: 1px solid lightgray;
+    padding-top: 5px;
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+}
+.FCOMON {
+
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    border-top: 1px solid lightgray;
+    padding-top: 5px;
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+}
+
+
+.PRICEMULTI{
+    display: grid;
+    grid-template-columns: 90% 10%;
+    font-size: 12px;
+    padding:0 20px;
+    display: none;
+}
+
+
+.priboxcom {
+    border: 1px solid grey;
+    border-radius: 30%;
+    width: 16px;
+    height: 16px;
+    background-color: lightgray;
+    cursor: pointer;
+}
+  /* products container */
+
+  .NykaaCosProducts-Container{
+      display: grid;
+      grid-template-columns: repeat(3, 32%);
+      grid-gap: 2%;
+  }
+  .main__div {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  .prod_box {
+    text-align: center;
+    font-size: 14px;
+    padding: 1.5rem;
+    padding-bottom: 40px;
+    line-height: 15px;
+  }
+  .prod_box > img {
+      height:60%;
+      width: 100%;
+      margin-bottom: 10px;
+  }
+  .starating {
+      font-size: 16px;
+  }
+  .btn_div {
+    display: grid;
+    grid-template-columns: 22% 78%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+  }
+  .wish_btn {
+      font-size: 22px;
+      padding: 5px;
+      border: none;
+      outline: none;
+      background-color: #fff;
+      color: #fc2779;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .cart_btn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      padding: 5px;
+      background-color:#fc2779;
+      color: #fff;
+  }
+  .main__div:hover .btn_div {
+      display: grid;
+  }
+  .mrp-text {
+      color:lightgrey;
+      font-weight: 400;
   }
