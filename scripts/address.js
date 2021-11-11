@@ -183,3 +183,17 @@ function delivery()
     window.location.href = "payment.html";
 }
 
+
+
+let Uname = document.querySelector(".Uname")
+let Uaddress = document.querySelector(".Uaddress")
+let Upostel  = document.querySelector(".Upostel")
+let Umobile = document.querySelector(".Umobile")
+
+let getLOCalAddreSS = JSON.parse(localStorage.getItem("MyNykaaAddress"))
+let LasTadd = getLOCalAddreSS[getLOCalAddreSS.length-1]
+
+Uname.textContent = LasTadd.name
+Uaddress.textContent = LasTadd.Address
+Upostel.textContent ="Pin Code : "+ LasTadd.Postel
+Umobile.textContent = LasTadd.MobileNo

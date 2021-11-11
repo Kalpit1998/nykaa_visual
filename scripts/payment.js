@@ -126,3 +126,39 @@ for (i = 0; i < coll.length; i++) {
 if (localStorage.getItem("MyNykaaAddress") === null) {
   localStorage.setItem("MyNykaaAddress", JSON.stringify([]));
 }
+
+
+if(localStorage.getItem("MyNykaaOrder") === null) {
+  localStorage.setItem("MyNykaaOrder" , JSON.stringify([]))
+}
+
+let final_payMent_text = document.querySelector("#final_payment_text")
+
+final_payMent_text.addEventListener("click" , funfinal_payment_text)
+
+function funfinal_payment_text() {
+
+  let MyNykaaOrDer = JSON.parse(localStorage.getItem("MyNykaaOrder"))
+
+  let getCartT = JSON.parse(localStorage.getItem("NykaaCart"))
+
+  getCartT.forEach((prod) => {
+    MyNykaaOrDer.push(prod)
+  })
+
+
+
+  // if(JSON.parse(localStorage.getItem("NykaaCart")).length > 0) {
+  // localStorage.setItem("NykaaCart", JSON.stringify([]))
+  // }
+
+  localStorage.setItem("MyNykaaOrder" , JSON.stringify(MyNykaaOrDer))
+
+  setTimeout(() => {
+    localStorage.setItem("NykaaCart" , JSON.stringify([]))
+    window.location.href = "sucess.html"
+  },2000)
+  
+
+
+}
