@@ -4,7 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>productdetail</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Cosmetics Products & Beauty Online in India at Best Price | Nykaa</title>
+    <link rel="shortcut icon" href="https://images-static.nykaa.com/media/favicon/default/nykaa_favicon_a.png"
+        type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -12,13 +26,20 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./styles/productDetail.css">
 
+
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/productDetail.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     
   </head>
   <body>
-    <div class="zoomer">
+    <div id="navbar"></div>
+    <p class="main___text"><a href="index.html">Home > </a><a href="ProductNykaaCosmetics.html"> Nykaa Cosmetics > </a><a href="ProductDetail.html"> Lipstick</a></p>
+    <div class="zoomer" id="zoomerr">
+  
       <div class="left shadow-lg">
+        <div class="add_hrt">♡</div>
         <div class="double">
           <div class="big-container">
             <div class="im-1 ms-4 mt-3" id="imageone">
@@ -57,17 +78,19 @@
         <p class="ms-3 mt-4 taxes">inclusive of all taxes</p>
 
         <div class="adressbag mt-5 ms-2">
-          <button>ADD TO BAG</button>
+          <button class="AddtoBag_btn">ADD TO BAG</button>
 
           <div class="hori"></div>
-          <!-- <div class="addt ms-2">
+          
+          <div class="addt ms-2">
 
 
-            <p>Delivery Option For 284003 </p>
-            <p>Shipping to jhansi,India</p>
-
-            cash on delivery available on order above 
-          </div> -->
+            <p>Delivery Option For <span class="getpin"></span></p>
+            <p class="Paddres forfont">Shipping to <span class="getaddresss"></span> , India</p>
+            <p class="Deliverd-text forfont">✔️ Delivered by <span class="getDat"></span></p>
+           <p class="Pnotee forfont">✔️cash on delivery available on order above ₹499</p>
+          </div>
+        
         </div>
 
         <div class="grey"></div>
@@ -104,10 +127,13 @@
     </div>
     
 
+    <br><br><br>
 
+    <footer></footer>
 
   </body>
 
+  <script src="./scripts/index.js" type="module"></script>
   <script src="./scripts/productDetail.js"></script>
 
   
