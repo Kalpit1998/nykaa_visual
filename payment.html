@@ -11,7 +11,9 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./styles/address.css">
     <link rel="stylesheet" href="./styles/payment.css">
+    
 
     <style>
       
@@ -47,9 +49,13 @@
       </div>
     </div>
 
+    <div class="SUggestion">
+      <span class="cir">◉ </span>&nbsp;  Please use a digital payment method & help us ensure contactless delivery for your safety
+    </div>
+
     <div class="contain mt-4 d-flex">
       <div class="paymentmode">
-        <h6 class="ms-3 mt-3 mb-0 pinky">Choose payment mode</h6>
+        <h6 class="ms-3 mt-3 mb-0 ">CHOOSE PAYMENT METHOD</h6>
         <ul class="list-group list mt-2">
             <li class="list-group-item" id="cd">Credit/Debit Card</li>
             <li class="list-group-item">UPI</li>
@@ -87,19 +93,97 @@
           <p class="pt-2 ">Last 3 Digits at the back of the Card</p>
         </div>
         <div class="che ms-3 mt-1">
-          <div class="mt-1"> <input type="checkbox" class="largerCheckbox"></div>
+          <div class="mt-1"> <input type="checkbox" checked class="largerCheckbox"></div>
          
           <div class="text"  > Save this card for Future</div>
         
         </div>
-        <button class="ms-3 mt-3 mb-5">
-        Pay rs5560
-         </button>
+        <a href="sucess.html"><button class="ms-3 mt-3 mb-5" id="final_payment_text">
+          
+         </button></a>
   
     </div>
 
     <div class="left bg-body shadow-sm ">
 
+      <button class="collapsible shadow-lg mt-2"><span class="number__cart"></span> item in your begs</button>
+      <div class="content" id="cartiteam">
+        gghiuhdsijfdsijfdioujfdifidoujfdioifdioujfgiuj
+      </div>
+
+      <button class="collapsible mb-4 mt-2 ">Grand totals</button>
+      <div class="content shadow-sm bg-body" id="totalprice">
+        <div class="price-cont bg-body">
+          <div class="subtotal mt-3">
+            <div>subtotal</div>
+            <div id="subt"></div>
+          </div>
+          <div class="shc mt-3">
+            <div>Shipping Charge</div>
+            <div id="sc">FREE</div>
+          </div>
+          <div class="ds mt-3">
+            <div class="deta">Discount</div>
+            <div id="dis">0</div>
+          </div>
+
+          <div class="usereward mt-3 ">
+            <div>Use Reward Points (2000)</div>
+            <div id="usrew">Apply</div>
+          </div>
+          <div class="grandt mt-3 mb-3">
+            <div class="tre">Grand Total</div>
+            <div id="usrewt"></div>
+          </div>
+
+
+
+        </div>
+      </div>
+      <div class="final_ship_address">
+        <div class="ship_change">
+          <p>SHIPPING ADDRESS</p> <a href="address.html" class="change_">Change</a>
+        </div>
+        <div class="USER_addr">
+          <p class="unaame"></p>
+          <p class="uaddress"></p>
+          <p class="upostel"></p>
+          <p class="umobile"></p>
+        </div>
+      </div>
     </div>
+
+
+</div>
+
+
+    
+    <div class="foot_address">
+      <div>
+        <img src="https://th.bing.com/th/id/OIP.EQr6-76DBAMuLdtRXFlyWQHaHa?w=209&h=209&c=7&r=0&o=5&pid=1.7" alt="">
+        <div>
+          <p class="gui_text">GENUINE PRODUCTS</p>
+          <P class="sma_text">Sourced Directly From Brands</P>
+        </div>
+      </div>
+      <div>
+        <img src="https://th.bing.com/th/id/OIP.d4sjG9Ay47GGHe2JSL2O-wHaHa?w=196&h=196&c=7&r=0&o=5&pid=1.7" alt="">
+        <div>
+          <p class="gui_text">FREE SHIPPING</p>
+          <P class="sma_text">For Orders Above Rs.499</P>
+        </div>
+      </div>
+      <div>
+        <img src="https://th.bing.com/th/id/OIP.hhXKJ5JrQdUmw2uKPf05qAAAAA?w=174&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+        <div>
+          <p class="gui_text">SECURE PAYMENTS</p>
+          <P class="sma_text">Using 128-bit SSL Encryption</P>
+        </div>
+      </div>
+    </div>
+
+    
   </body>
+
+  <script src="./scripts/payment.js"></script>
 </html>
