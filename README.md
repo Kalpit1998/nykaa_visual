@@ -13,3 +13,34 @@
 
 # How to browse through the project? 
 
+
+
+
+
+
+
+
+
+
+# Authors
+
+### Ankit Mishra :boy:
+>  [Linkedin](https://www.linkedin.com/in/ankit-mishra-b96594195)
+
+### Gaurav Maihuria :boy:
+> [Linkedin](https://www.linkedin.com/in/gaurav-maihuria/)
+
+### Kalpit Sharma :boy:
+> [Linkedin]()
+
+### Vishnu Dutta :boy:
+> [Linkedin]()
+
+### Ambika Kumari :woman:
+> [Linkedin]()
+
+### Harshal Pagar :boy:
+> [Linkedin]()
+
+
+
