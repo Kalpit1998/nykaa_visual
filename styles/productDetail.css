@@ -8,7 +8,7 @@ body {
   width: 75%;
   transform: translateX(18%);
 
-  margin-top: 5%;
+  margin-top: 1%;
   display: flex;
 }
 
@@ -171,4 +171,31 @@ button {
 #imagertelletwo img {
   max-width: 100%;
   height: auto;
+}
+
+.main___text {
+  margin-top: 12%;
+  margin-left: 10%;
+}
+.main___text a {
+  color: gray;
+  font-size: 14px;
+}
+
+.getpin {
+  color:#fc2779;
+}
+.forfont {
+  font-size: 12px;
+}
+.second-search{
+  padding: 11px 12px;
+}
+.add_hrt{
+  color: #fc2779;
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+  margin-left: 90%;
+  cursor: pointer;
 }
