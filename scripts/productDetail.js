@@ -17,7 +17,7 @@ let imagerone = document.getElementById('imagerone')
 let imagertwo = document.getElementById('imagertwo')
 
 let data = JSON.parse(localStorage.getItem('ProductDetail'))
-console.log(data)
+
 data.forEach((element) => {
   oneim.src = element.img1
   twoim.src = element.img2
@@ -26,7 +26,7 @@ data.forEach((element) => {
   contimageimp.src = element.img1
   nana.innerHTML = element.name
   star.innerHTML = element.rating
-  price.innerHTML = element.price
+  price.innerHTML = "MRP : ₹" + element.price
   descters.innerHTML = element.description
 
   conta.addEventListener('mouseover', () => {
@@ -103,3 +103,86 @@ function getmousepos(e) {
   return { x, y }
 }
 //   localStorage.removeItem("ProductDetail")
+
+
+
+
+
+let getLocalAdress = JSON.parse(localStorage.getItem("MyNykaaAddress"))
+let MyAkkilast = getLocalAdress[getLocalAdress.length-1]
+
+let getpin = document.querySelector(".getpin")
+getpin.textContent = MyAkkilast.Postel
+
+let getaddresss = document.querySelector(".getaddresss")
+getaddresss.textContent = MyAkkilast.Address.substring(0,30)
+
+let daa = new Date()
+
+const month = new Array();
+month[0] = "January";
+month[1] = "February";
+month[2] = "March";
+month[3] = "April";
+month[4] = "May";
+month[5] = "June";
+month[6] = "July";
+month[7] = "August";
+month[8] = "September";
+month[9] = "October";
+month[10] = "November";
+month[11] = "December";
+
+let getDat = document.querySelector(".getDat")
+getDat.textContent = daa.getDate() + 7 + "th/" + month[daa.getMonth()].substring(0,3) 
+
+localStorage.setItem("MyNykaaAddress" , JSON.stringify(getLocalAdress))
+
+
+
+//ADD TO BAG
+
+let AddtoBag_btn = document.querySelector(".AddtoBag_btn")
+AddtoBag_btn.addEventListener("click" , fnAddtoBag_btn)
+
+function fnAddtoBag_btn() {
+
+
+  let getNykaCart = JSON.parse(localStorage.getItem("NykaaCart"))
+
+  let dataa = JSON.parse(localStorage.getItem('ProductDetail'))
+  let dataalast = dataa[dataa.length-1]
+
+  getNykaCart.push(dataalast)
+
+  localStorage.setItem("NykaaCart" , JSON.stringify(getNykaCart))
+
+  localStorage.setItem("ProductDetail", JSON.stringify(dataa))
+
+
+
+}
+
+
+//ADD TO WISH
+
+let add_hrt = document.querySelector(".add_hrt")
+
+add_hrt.addEventListener("click" , fnAddTOWiSh)
+
+function fnAddTOWiSh() {
+
+
+    
+  let getWishes = JSON.parse(localStorage.getItem("NykaaWish"))
+
+  let dataa = JSON.parse(localStorage.getItem('ProductDetail'))
+  let dataalast = dataa[dataa.length-1]
+
+  getWishes.push(dataalast)
+
+  localStorage.setItem("NykaaWish" , JSON.stringify(getWishes))
+
+  localStorage.setItem("ProductDetail", JSON.stringify(dataa))
+
+}
