@@ -37,9 +37,9 @@
   }
   .address {
     width: 31%;
-  
+    color: black;
+    border-bottom: none;
     margin-left: 0.2%;
-    color: #fc2779;
     font-size: 16px;
     font-weight: 600;
   }
@@ -49,6 +49,7 @@
     font-weight: 600;
     margin-left: 0.2%;
     border-bottom: 3px solid #fc2779;
+    color: #fc2779;
   }
   .line {
     background-color: #ebebeb;
@@ -68,7 +69,6 @@
   .contain {
     width: 80%;
     transform: translateX(14%);
-    border: 1px solid red;
   }
   
   .smallemail {
@@ -86,7 +86,7 @@
   }
   .addresstake {
     width: 43%;
-  
+    height: 340px;
     margin-left: 1%;
     margin-top: 3.5%;
   }
@@ -100,7 +100,7 @@
     width: 100%;
   }
   .paymentmode {
-    width: 30%;
+    width: 25%;
     cursor: grab;
   }
   .pinky {
@@ -114,7 +114,7 @@
     color: #fc2779;
   }
   .left {
-    width: 25%;
+    width: 30%;
     margin-left: 1%;
     margin-top: 3.5%;
   }
@@ -166,7 +166,7 @@
     margin-top: 0.3%;
     margin-left: 2%;
   }
-  button {
+  #final_payment_text{
     width: 90%;
     background-color: #fc2779;
     color: #fff;
@@ -174,4 +174,44 @@
     border: none;
     height: 8vh;
   }
-  
+  .final_ship_address{
+    background-color: #F3F3F3;
+    padding: 1rem;
+  }
+  .ship_change{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ship_change > p {
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+  }
+  .change_ {
+    color: #fc2779;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .USER_addr{
+    margin-top: 1rem;
+    font-size: 12px;
+  }
+  .USER_addr > p {
+    margin-bottom: 7px;
+  }
+
+  .SUggestion{
+    width: 77%;
+    margin:2rem auto;
+    padding:0.8rem 1rem;
+    font-size: 14px;
+    background-color: #E0EDFF;
+    border: 1px solid rgb(182, 182, 245);
+    border-radius: 10px;
+  }
+  .cir {
+    color: blue;
+    font-size: 14px;
+  }
