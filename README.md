@@ -9,6 +9,7 @@
 * CSS
 * JavaScript (LocalStorage, DOM, Api)
 * Created local server
+* Bootstrap
 
 
 # How to browse through the project? 
@@ -27,20 +28,32 @@
 ### Ankit Mishra :boy:
 >  [Linkedin](https://www.linkedin.com/in/ankit-mishra-b96594195)
 
+>  [GitHub](https://github.com/Ankit-Mishra07)
+
 ### Gaurav Maihuria :boy:
 > [Linkedin](https://www.linkedin.com/in/gaurav-maihuria/)
 
+> [GitHub](https://github.com/gaurav16-lang)
+
 ### Kalpit Sharma :boy:
-> [Linkedin]()
+> [Linkedin](http://www.linkedin.com/in/kalpit-sharma1998)
+
+> [GitHub](https://github.com/Kalpit1998)
 
 ### Vishnu Dutta :boy:
 > [Linkedin]()
 
+> [GitHub]()
+
 ### Ambika Kumari :woman:
 > [Linkedin]()
 
+> [GitHub]()
+
 ### Harshal Pagar :boy:
 > [Linkedin]()
+
+> [GitHub]()
 
 
 
