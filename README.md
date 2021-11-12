@@ -74,9 +74,9 @@
 > [GitHub](https://github.com/Kalpit1998)
 
 ### Vishnu Dutta :boy:
-> [Linkedin]()
+> [Linkedin](https://www.linkedin.com/in/vishnu-dutta-90baba20b/)
 
-> [GitHub]()
+> [GitHub](https://github.com/vishnudutta1)
 
 ### Ambika Kumari :woman:
 > [Linkedin]()
