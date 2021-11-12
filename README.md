@@ -83,9 +83,9 @@
 > [GitHub]()
 
 ### Harshal Pagar :boy:
-> [Linkedin]()
+> [Linkedin](http://www.linkedin.com/in/harshal-pagar-7324a4209)
 
-> [GitHub]()
+> [GitHub](https://github.com/harshpagar)
 
 
 
