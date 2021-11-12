@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Georgia;
 }
 
 body {
@@ -94,6 +93,7 @@ body {
 .topimage {
   max-width: 100%;
   margin: 30px auto;
+  margin-top: 11rem;
 }
 
 .topimage img {
@@ -109,7 +109,7 @@ body {
   display: flex;
   position: sticky;
   z-index: 10;
-  top:0px;
+  top:15%;
 }
 
 .link {
