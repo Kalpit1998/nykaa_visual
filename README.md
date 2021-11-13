@@ -61,7 +61,8 @@ Open index.html on live server(using VS code live server).
 
 
 # Video demo
-[video](https://drive.google.com/file/d/1u0sHc2CqmiwR1BQP97EVnAluTHQk1Rid/view?usp=sharing)
+[video](https://youtu.be/E-VjvLnB6Eg
+)
 
 
 
