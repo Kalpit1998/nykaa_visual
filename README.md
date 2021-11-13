@@ -14,7 +14,10 @@
 
 # How to browse through the project? 
 #### In order to use the project you need to follow the below steps.
-1. Open index.html on live server(using VS code live server).
+### Landing Page:
+
+Open index.html on live server(using VS code live server).
+
 ![2021-11-11 (5)](https://user-images.githubusercontent.com/61643245/141407710-c9aa55bc-6997-4cc6-81c7-1a8e18e905a2.png)
 2. This is the landing page of the clone website.
    click on the sign up on the top right to sign up.
@@ -50,7 +53,7 @@
 
 
 
-
+![2021-11-11 (17)](https://user-images.githubusercontent.com/61643245/141607406-578193ec-4714-4b65-9a74-ae79773e3dac.png)
 
 
 
@@ -86,9 +89,9 @@
 > [GitHub](https://github.com/vishnudutta1)
 
 ### Ambika Kumari :woman:
-> [Linkedin]()
+> [Linkedin](https://www.linkedin.com/in/ambika-kumari-5aa792165)
 
-> [GitHub]()
+> [GitHub](https://github.com/ambika13kumari)
 
 ### Harshal Pagar :boy:
 > [Linkedin](http://www.linkedin.com/in/harshal-pagar-7324a4209)
