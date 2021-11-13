@@ -21,10 +21,9 @@ Open index.html on live server(using VS code live server).
 ![2021-11-11 (5)](https://user-images.githubusercontent.com/61643245/141407710-c9aa55bc-6997-4cc6-81c7-1a8e18e905a2.png)
 2. This is the landing page of the clone website.
    click on the sign up on the top right to sign up.
-![2021-11-11 (6)](https://user-images.githubusercontent.com/61643245/141407740-9b8db2ec-62c7-48e9-be5f-e5c35b4af3cb.png)
-3. After provided mobile number you get the OTP on your given mobile number
 ![2021-11-13 (3)](https://user-images.githubusercontent.com/61643245/141608718-90305419-c33e-48a6-b55a-042adbeaa778.png)
-
+3. After provided mobile number you get the OTP on your given mobile number
+![2021-11-11 (7)](https://user-images.githubusercontent.com/61643245/141608761-622cb61d-2fc2-4c67-bc39-a27d8561a4a9.png)
 4. Fill the correct otp then user get  message on the screen sucessfully login
 ![2021-11-11 (8)](https://user-images.githubusercontent.com/61643245/141407751-7aec837b-d78f-4b74-9911-a31abdea26b3.png)
 5. After Login user gets profile icon in top right on navigation bar just click on that icon to go to user profile.
